@@ -1,0 +1,252 @@
+{
+  "reference_ap_sha256": "a19b601477569765103eaf468b937bd8026b4d68ffa5c896bde222a79e475858",
+  "kernel": "NuttX version 0.0.0 af8ec192 Sep 12 2026 07:22:22",
+  "partitions": "0:32,32:64,96:1536,1632:32,1664:384",
+  "windows": [
+    {
+      "id": "ap_header",
+      "offset": 0,
+      "count": 64,
+      "fnv": 2347736871,
+      "sha256": "27e25e8d140b8f78c96a0377915c823d99ef1c243a8f9864f6306cb1aee4ef4c"
+    },
+    {
+      "id": "startup_copy",
+      "offset": 788,
+      "count": 132,
+      "fnv": 1964886050,
+      "sha256": "34ffc77d63248682495be62b9bf49f56575d26c36b4aaa513c0d6269d90537d4"
+    },
+    {
+      "id": "kernel_identity",
+      "offset": 1769684,
+      "count": 96,
+      "fnv": 2079057126,
+      "sha256": "2e18534e84e0e4755f828bf0d8b750bfc6c1aedb280c872cda96c806bb448b85"
+    },
+    {
+      "id": "build_version",
+      "offset": 3144172,
+      "count": 64,
+      "fnv": 1102538540,
+      "sha256": "44964734aba2dbf23c5a6cfd222b0674bdbb1854c01bee07cc5064b91ab308e7"
+    },
+    {
+      "id": "build_info",
+      "offset": 11793164,
+      "count": 376,
+      "fnv": 1564041096,
+      "sha256": "06214530b7fae53c7e2ee5145273fab6ce7f84d20044cc2309fcb22a18a98c5e"
+    },
+    {
+      "id": "flash_partition_table",
+      "offset": 1777040,
+      "count": 580,
+      "fnv": 3121509417,
+      "sha256": "b52a28aee3fecd5e73be6ed309c5e055b4f04dec86026d5feb128dfd941526e5"
+    },
+    {
+      "id": "partition_registration",
+      "offset": 4521484,
+      "count": 264,
+      "fnv": 283643090,
+      "sha256": "4f253facaabd21c0e1ff7d735eda5cedac437adb4969a0f8a751e782e436f3d5"
+    },
+    {
+      "id": "open_veneer",
+      "offset": 8384256,
+      "count": 8,
+      "fnv": 1573110118,
+      "sha256": "cbbb5b604dff4c4d5ee201d3296a4283d0a32bb1b90fae5566a5a1ad064a16fa"
+    },
+    {
+      "id": "open_implementation",
+      "offset": 1605288,
+      "count": 124,
+      "fnv": 2185602180,
+      "sha256": "519c038be3212b340236c29553c9be3eacadbcf94ccca5f533e0c09fd1bb5070"
+    },
+    {
+      "id": "write_veneer",
+      "offset": 8380480,
+      "count": 8,
+      "fnv": 1892749604,
+      "sha256": "797c775ffca1dcf048a90d96e314f9235cc3ef34a3597401a3f047e8aeca2155"
+    },
+    {
+      "id": "write_implementation",
+      "offset": 1611760,
+      "count": 100,
+      "fnv": 1802825043,
+      "sha256": "567ee0c4a006a344a1a329dbe8831098163c2eec04d432cca063e5c2e4f1ed40"
+    },
+    {
+      "id": "close_veneer",
+      "offset": 8379304,
+      "count": 8,
+      "fnv": 1484121897,
+      "sha256": "8c52df7e8bc49b63a9c5a4cfaaa436c4fbcfab3e6050357d183a5f405e9c9172"
+    },
+    {
+      "id": "close_implementation",
+      "offset": 1592160,
+      "count": 192,
+      "fnv": 1264215831,
+      "sha256": "5108a7fd6ea1e29ea8f98ee375b5d4bdd977ae04e1e3f1d5c322c2534c2bdf6a"
+    },
+    {
+      "id": "launcher_task_spawn",
+      "offset": 4232948,
+      "count": 216,
+      "fnv": 1919895160,
+      "sha256": "a1131c0ed1669256f6b3fa689e1ff4ea00b16b14e77d8f1d407dcb55b19fed2b"
+    },
+    {
+      "id": "launcher_task_init",
+      "offset": 4230316,
+      "count": 212,
+      "fnv": 4245902624,
+      "sha256": "9ef7c7ac28f547f2d4c24bd30d0d76a74be23c99f728d85dfd95e3b436a573b7"
+    },
+    {
+      "id": "launcher_task_argsetup",
+      "offset": 4231144,
+      "count": 316,
+      "fnv": 3143056389,
+      "sha256": "cc7ed7b36e85abd331953eadf241cd8ead6f35c3ddec56a96aa67b8e4018be47"
+    },
+    {
+      "id": "launcher_child_stackframe",
+      "offset": 4536068,
+      "count": 56,
+      "fnv": 51263321,
+      "sha256": "536e579a3bf946087bd58e4789a5a8a03e768f02e010ab6a65b7b03b39526afc"
+    },
+    {
+      "id": "launcher_new_task_group",
+      "offset": 4204236,
+      "count": 116,
+      "fnv": 2938410175,
+      "sha256": "3396cbb3bf3a9801b2b282fa4c24a9b87c970703439f48e9a210f459b685f86f"
+    },
+    {
+      "id": "launcher_group_initialize",
+      "offset": 4204352,
+      "count": 84,
+      "fnv": 4143608645,
+      "sha256": "66330f104a3d459d03465ce58690a9815838642bffe97315c0cd218f827660da"
+    },
+    {
+      "id": "launcher_task_files_clone",
+      "offset": 4204972,
+      "count": 96,
+      "fnv": 2724339061,
+      "sha256": "d182fc75bd834e5ff28041daee9bca46fc09636ef099e02568b46f0c27306bfa"
+    },
+    {
+      "id": "launcher_attr_init",
+      "offset": 4447432,
+      "count": 92,
+      "fnv": 1681552666,
+      "sha256": "77a26a60efd1095c48679d148520de16ecaa38b060c78dc6fabe5eabdcb8ddac"
+    },
+    {
+      "id": "launcher_attr_setstacksize",
+      "offset": 4447592,
+      "count": 28,
+      "fnv": 2147812333,
+      "sha256": "aa98b4f84f9dab6d5e6601b1d588e7cd132b2dc279336e28afa028218bfeb6ef"
+    },
+    {
+      "id": "launcher_libc_system_ABI_oracle",
+      "offset": 5351616,
+      "count": 176,
+      "fnv": 464339342,
+      "sha256": "e571ca136c318a728e67993d4b0f8178e7025fdee463b7a009d1dec0bb29d4af"
+    },
+    {
+      "id": "launcher_nsh_system",
+      "offset": 5196268,
+      "count": 64,
+      "fnv": 3935445553,
+      "sha256": "15e3fe713efcad9c533cf880ab6b9a7fd5eae70e221db1742baad33c37f04698"
+    },
+    {
+      "id": "launcher_nsh_newconsole",
+      "offset": 5170724,
+      "count": 120,
+      "fnv": 1439867510,
+      "sha256": "292f18e00761300036ab99b4016a8daf871b2da9bb7ac541161230a67e1e0dd1"
+    },
+    {
+      "id": "launcher_nsh_session",
+      "offset": 5194288,
+      "count": 308,
+      "fnv": 3130346419,
+      "sha256": "6c18b890339d98f8e5fdef7ac285150ca57129c6f53f5f3b457959a412f0b921"
+    },
+    {
+      "id": "launcher_cmd_source",
+      "offset": 5179660,
+      "count": 16,
+      "fnv": 1194956156,
+      "sha256": "d742e9ab7150e9de616e1d45a743ed9493e6cd92d0225186a54e8b3faa382ee1"
+    },
+    {
+      "id": "launcher_nsh_script",
+      "offset": 5193884,
+      "count": 320,
+      "fnv": 3443339978,
+      "sha256": "9b3c339c88cff40884ae8e4c27a712a2908aeb4ba5819fb4d912c2d9bd2b5e07"
+    },
+    {
+      "id": "launcher_internal_command_dispatch",
+      "offset": 5169936,
+      "count": 112,
+      "fnv": 57650883,
+      "sha256": "8a44bf7166b1ec1a0e62bf6a31a71dca2900ddb2b255d518a4adf3bc0022b1d8"
+    },
+    {
+      "id": "recorder_client",
+      "offset": 433996,
+      "count": 1120,
+      "fnv": 4261311254,
+      "sha256": "57f75c1f7feb904500ab28bd7c75b2b8e859d2fa4736a4d529898b5364e7b708"
+    },
+    {
+      "id": "recorder_proxy_disconnect",
+      "offset": 438076,
+      "count": 360,
+      "fnv": 847336513,
+      "sha256": "d85d9b60b64a49a24dd12dc5b4b5955a66e406a3b8a2fbcb5e98ec8c77c874dd"
+    },
+    {
+      "id": "recorder_rpc",
+      "offset": 438436,
+      "count": 464,
+      "fnv": 2917212751,
+      "sha256": "2af15d8c2a9edf37cf831a640bd0e5f5f503649cc3aaa8692e4073c13968012b"
+    },
+    {
+      "id": "recorder_proxy_select_release",
+      "offset": 438900,
+      "count": 500,
+      "fnv": 399016869,
+      "sha256": "46c1c065bf86119c23ea9a92a6fe17831fe0bd355c7be555bf6bb80bf93528d0"
+    },
+    {
+      "id": "recorder_proxy_connect",
+      "offset": 437876,
+      "count": 200,
+      "fnv": 1229931482,
+      "sha256": "c925ac95c8226af04669935006d8d5aa49867e0bcba6cee0db68165a4f6c3566"
+    },
+    {
+      "id": "loader_uninit",
+      "offset": 4213360,
+      "count": 256,
+      "fnv": 13287915,
+      "sha256": "2c6d0532a4eff9615ad8530f7156272587550456d1325e8726972cc82237257d"
+    }
+  ]
+}

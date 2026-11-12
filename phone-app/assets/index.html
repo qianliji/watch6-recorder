@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>Watch6 录音</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Watch6 <b>录音</b></span></div>
+      <button id="connectionShortcut" class="status-shortcut" aria-label="查看连接设置"><span id="dot" class="dot"></span><span id="statusLabel">未开启</span></button>
+    </header>
+    <nav class="tabs" role="tablist" aria-label="应用页面">
+      <button id="libraryTab" class="tab selected" role="tab" aria-selected="true" aria-controls="libraryPanel">录音 <span id="recordCount">0</span></button>
+      <button id="settingsTab" class="tab" role="tab" aria-selected="false" aria-controls="settingsPanel">连接<span id="attention" class="attention" hidden aria-label="需要处理"></span></button>
+    </nav>
+    <main>
+      <section id="libraryPanel" role="tabpanel" aria-labelledby="libraryTab">
+        <div class="section-title"><div><h1>我的录音</h1><p id="librarySummary">手表原音，在这里收藏。</p></div><button id="refresh" class="icon-button refresh-button" aria-label="刷新录音库"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 8a7.5 7.5 0 1 0 .5 7M19 3v5h-5"/></svg></button></div>
+        <section id="connectionCard" class="glass connection-card" aria-label="手表连接">
+          <div class="connection-copy"><span class="device-icon" aria-hidden="true"><svg viewBox="0 0 24 32"><rect x="4" y="8" width="16" height="16" rx="5"/><path d="m8 8 1-5h6l1 5M8 24l1 5h6l1-5M20 13h1v5h-1"/><path d="M12 12v4l3 2"/></svg></span><div><strong id="connection">尚未开启接收</strong><p id="connectionHint">连接手表后，从手表录音列表导出。</p></div></div>
+          <button id="connect" class="primary compact">开启接收</button>
+          <button id="connectionDetails" class="text connection-details">查看设置 <span aria-hidden="true">›</span></button>
+        </section>
+        <section id="transfer" class="glass transfer-card" hidden aria-live="polite">
+          <div class="row"><div class="transfer-heading"><span id="transferMark" class="transfer-mark" aria-hidden="true">↓</span><strong id="transferTitle">正在接收</strong></div><span id="percent" class="percent">0%</span></div>
+          <progress id="progress" max="1" value="0" aria-label="已安全保存的接收进度"></progress>
+          <div class="row transfer-meta"><span id="transferBytes"></span><span id="transferStatus"></span></div>
+          <p id="transferHint" class="fine-print">手表原音保留，接收中断后可继续导出。</p>
+          <button id="retrySave" class="primary" hidden>完成保存</button>
+        </section>
+        <p id="error" class="error" role="alert" hidden></p>
+        <div id="records" class="records"></div>
+        <section id="empty" class="empty glass">
+          <div class="empty-art" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <h2>第一条录音，留在这里</h2>
+          <p>在手表录音列表选择录音，<br>点「发送到手机」。完整接收后即可回听、保存和分享。</p>
+          <button id="emptySetup" class="subtle">查看连接步骤 <span aria-hidden="true">↗</span></button>
+        </section>
+        <p class="library-note">你的录音，保存在自己的设备上。</p>
+      </section>
+      <section id="settingsPanel" role="tabpanel" aria-labelledby="settingsTab" hidden>
+        <div class="section-title"><div><h1>连接设置</h1><p>通过小米运动健康接收手表录音。</p></div><span class="settings-symbol" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 7h7m5 0h6M3 17h12m5 0h1"/><circle cx="12.5" cy="7" r="2.5"/><circle cx="17.5" cy="17" r="2.5"/></svg></span></div>
+        <section class="glass settings-status">
+          <div class="row"><strong id="settingsConnection">尚未开启接收</strong><span id="settingsBadge" class="badge">未开启</span></div>
+          <p id="settingsHint">先在小米运动健康中连接手表，再开启接收。</p>
+          <div class="actions"><button id="settingsConnect" class="primary">开启接收</button><button id="disable" class="subtle" hidden>关闭接收</button><button id="appSettings" class="subtle" hidden>检查手机权限</button></div>
+        </section>
+        <details class="glass setup-card" id="setup">
+          <summary class="card-heading"><h2>第一次使用</h2><span class="quiet-label">查看连接步骤 ＋</span></summary>
+          <ol class="setup-steps">
+            <li><span class="step-number">1</span><div><h3>连接小米运动健康</h3><p>在运动健康中配对手表，确认蓝牙已连接。</p><button id="openFitness" class="text inline-link">打开运动健康 <span aria-hidden="true">↗</span></button></div></li>
+            <li id="identityStep"><span class="step-number">2</span><div><h3>首次安装手表连接组件</h3><p>按安装说明导入录音表盘（BIN）和配套 RPK「录音连接组件」，再打开录音表盘。组件只提供连接身份，日常无需打开。</p><p id="identityHint" class="step-note">组件安装后请保留在手表中。录音、导出与本地回听都在录音表盘操作。</p></div></li>
+            <li><span class="step-number">3</span><div><h3>允许通信与后台接收</h3><p>点「开启接收」，允许附近设备与运动健康通信授权。持续接收时，请允许本应用和运动健康在后台运行。</p></div></li>
+          </ol>
+        </details>
+        <details class="glass help-card" id="help">
+          <summary>需要帮助<span aria-hidden="true">＋</span></summary>
+          <p>临时断连会自动重试。请保持手机蓝牙开启，并在运动健康中确认手表连接；如授权尚未完成，点上方「重新授权」。</p>
+          <p>接收未完成时，回到手表选择同一条录音重新导出，可从已安全保存的位置继续。不要删除手表原音。</p>
+          <p>仅装表盘暂不能使用此通信路径；安装配套组件后日常无需打开。</p>
+          <div class="actions"><button id="permissionsHelp" class="subtle">检查手机权限</button><button id="diagnostics" class="subtle">保存连接诊断</button></div>
+          <small>诊断只含连接阶段和计数，不含录音、识别文本、设备地址或密钥。</small>
+        </details>
+        <p class="privacy-note"><span aria-hidden="true">◈</span> 录音只保存在手机与手表，不使用手机麦克风。</p>
+      </section>
+    </main>
+    <footer>WATCH6 RECORDER <span>随时记录，安心保存</span></footer>
+  </div>
+  <section id="player" class="player glass" hidden aria-label="录音播放器">
+    <div class="player-top"><span class="player-art" aria-hidden="true"><i></i><i></i><i></i><i></i></span><div class="player-copy"><strong id="playerTitle">录音回听</strong><span id="playerState">正在回听</span></div><button id="stop" class="icon-button close-player" aria-label="停止并关闭播放器">×</button></div>
+    <input id="seek" aria-label="播放进度，可拖动" type="range" min="0" max="1" value="0" step="100">
+    <div class="player-controls"><span id="elapsed" class="player-time">00:00</span><button id="toggle" class="play-toggle" aria-label="暂停"><span id="toggleIcon" aria-hidden="true">Ⅱ</span><span id="toggleLabel" class="sr-only">暂停</span></button><span id="duration" class="player-time">00:00</span></div>
+  </section>
+  <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+  <script src="app.js"></script>
+</body>
+</html>

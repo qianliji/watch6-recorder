@@ -1,0 +1,69 @@
+{
+  "reference_ap_sha256": "a19b601477569765103eaf468b937bd8026b4d68ffa5c896bde222a79e475858",
+  "windows": [
+    {
+      "id": "module_locked_initializer",
+      "address": 206326188,
+      "offset": 4213164,
+      "count": 312,
+      "fnv": 672802162,
+      "sha256": "4d6d01dac969706e6c806d711fcad0ec2d6adacc0400a91f27cb99ad4a11d6ac"
+    },
+    {
+      "id": "task_spawn",
+      "address": 206345972,
+      "offset": 4232948,
+      "count": 216,
+      "fnv": 1919895160,
+      "sha256": "a1131c0ed1669256f6b3fa689e1ff4ea00b16b14e77d8f1d407dcb55b19fed2b"
+    },
+    {
+      "id": "task_spawn_initialize",
+      "address": 206343340,
+      "offset": 4230316,
+      "count": 208,
+      "fnv": 3323600888,
+      "sha256": "b5467884ed2cdb9e5619f2effcddd24ec5caa86ba9c2e2bb1dbca50c308e406c"
+    },
+    {
+      "id": "task_spawn_entry_arguments",
+      "address": 206344168,
+      "offset": 4231144,
+      "count": 312,
+      "fnv": 2897346149,
+      "sha256": "7a03cabec51a49cc3586722d754e656339e81148de94c14ec4ba102a28bc6316"
+    },
+    {
+      "id": "task_getpid",
+      "address": 206345900,
+      "offset": 4232876,
+      "count": 36,
+      "fnv": 3650569029,
+      "sha256": "600db9799262a4ee59dbaf31e3cb3b4f14964904915538e04893be4df6220fae"
+    },
+    {
+      "id": "task_pid_lookup_critical",
+      "address": 206330948,
+      "offset": 4217924,
+      "count": 76,
+      "fnv": 844631299,
+      "sha256": "600b62939dc515187309071d142dbe19b36e5770c933cfce31f5539505767923"
+    },
+    {
+      "id": "task_attributes_init",
+      "address": 206560456,
+      "offset": 4447432,
+      "count": 64,
+      "fnv": 212487823,
+      "sha256": "75bb42c05bc857bbf41e3b558a1b06588df452d058979ad05513e58f5176df97"
+    },
+    {
+      "id": "task_attributes_stack",
+      "address": 206560616,
+      "offset": 4447592,
+      "count": 36,
+      "fnv": 2450288796,
+      "sha256": "129064f3e2aeffc3d62cf297880854310a8d60ba45676f905e8d2de1f94f47b0"
+    }
+  ]
+}

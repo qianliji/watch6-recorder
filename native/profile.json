@@ -1,0 +1,488 @@
+{
+  "reference_ap_sha256": "a19b601477569765103eaf468b937bd8026b4d68ffa5c896bde222a79e475858",
+  "reference_audio_sha256": "e6013c449d6b0b2a762babb280c804356b34ba4ae681a84b4f1a4d9a61bae13c",
+  "firmware": "P65 3.100.043",
+  "status": "enabled explicit-user-start candidate; not physically verified",
+  "device_execution": false,
+  "continuous_enabled": true,
+  "continuous_verified": false,
+  "capability_mask": 127,
+  "required_capability_mask": 127,
+  "missing": [
+    "commercial_buffer_prepare_accept_order_device_acceptance",
+    "commercial_flush_stop_tail_device_acceptance",
+    "device_filesystem_latency_and_durability_acceptance"
+  ],
+  "windows": [
+    {
+      "id": "rec_open",
+      "address": 470000008,
+      "offset": 433996,
+      "count": 88,
+      "fnv": 2057526801,
+      "sha256": "69a4c6a8fd618863cbfc3cc615a9c57d6bcfb1f569aa5dfbdb93ccc2e77ff3c9"
+    },
+    {
+      "id": "rec_close_and_join",
+      "address": 470000104,
+      "offset": 434092,
+      "count": 92,
+      "fnv": 2937477752,
+      "sha256": "4cbfdef0446ba7eb1d15b91e8e3bc54eeac8bac86d05f6ddf246319083d56a5d"
+    },
+    {
+      "id": "rec_set_event",
+      "address": 470000196,
+      "offset": 434184,
+      "count": 76,
+      "fnv": 304293002,
+      "sha256": "00347ddac1c6a3f82c94cba05f531484ac20a075e162c748d3ff440976d01d1d"
+    },
+    {
+      "id": "stock_prepare_buffer_oracle",
+      "address": 470000272,
+      "offset": 434260,
+      "count": 352,
+      "fnv": 2327714702,
+      "sha256": "2e60b160ef994efe5563885a7ef8a131d89c68865e869ba20c66d1402d47c738"
+    },
+    {
+      "id": "rec_read_oracle",
+      "address": 470000696,
+      "offset": 434684,
+      "count": 144,
+      "fnv": 3088812992,
+      "sha256": "55ee1fc0d65f434bda42efe4ad33f8d51e7cda0ccf25f485991eeaf0a0d83310"
+    },
+    {
+      "id": "rec_get_socket_oracle",
+      "address": 470000840,
+      "offset": 434828,
+      "count": 32,
+      "fnv": 2940754230,
+      "sha256": "979f16d8e6f5234c7fc34070ff53dfc34b398b11e408e8e069b03871c217234b"
+    },
+    {
+      "id": "rec_start",
+      "address": 470000908,
+      "offset": 434896,
+      "count": 32,
+      "fnv": 4057267668,
+      "sha256": "95d195bc6aa31894ac1a956515288b865d5f7b98d88d60bc041e3d20aa0dc6bc"
+    },
+    {
+      "id": "rec_pause",
+      "address": 470000940,
+      "offset": 434928,
+      "count": 32,
+      "fnv": 3606674398,
+      "sha256": "4f4748d59458066b40ea048dfbd1b2b1c3ba9bbc1c2bef29f05d72cd828a0530"
+    },
+    {
+      "id": "rec_pause_literal",
+      "address": 471959744,
+      "offset": 2393732,
+      "count": 6,
+      "fnv": 2920875767,
+      "sha256": "685ef62ca8a38b2fdbae7c4e066a1630b87e51ec603f3327ad00499701fcfe40"
+    },
+    {
+      "id": "stock_stop_closes_data_first",
+      "address": 470000972,
+      "offset": 434960,
+      "count": 68,
+      "fnv": 4145081957,
+      "sha256": "c920053b36b5d9d8ff7f42c8f427d703a1ecd145b7d4e1cbd8888cb3fa3aac5e"
+    },
+    {
+      "id": "fixed_rpc_once",
+      "address": 470004448,
+      "offset": 438436,
+      "count": 464,
+      "fnv": 2917212751,
+      "sha256": "2af15d8c2a9edf37cf831a640bd0e5f5f503649cc3aaa8692e4073c13968012b"
+    },
+    {
+      "id": "cpu_audio_literal_selection",
+      "address": 470004912,
+      "offset": 438900,
+      "count": 356,
+      "fnv": 3940074885,
+      "sha256": "1caa101b9c0fe4ee9e855a09bf266bfaab556922ed490b9bdb1fbc0181cfab1f"
+    },
+    {
+      "id": "proxy_disconnect_joins_thread",
+      "address": 470004088,
+      "offset": 438076,
+      "count": 100,
+      "fnv": 1481177633,
+      "sha256": "875b3c08119afdd6659ee10e49b1b42bda7354462e584ee8c55d7549c806a912"
+    },
+    {
+      "id": "socket_veneer",
+      "address": 471235728,
+      "offset": 1669716,
+      "count": 8,
+      "fnv": 1403415729,
+      "sha256": "28f7341e79909dd6667c3e6e025d3cb44f42b5af592c59d8188fa601567d877b"
+    },
+    {
+      "id": "bind_veneer",
+      "address": 471237096,
+      "offset": 1671084,
+      "count": 8,
+      "fnv": 1840812519,
+      "sha256": "e16e2dcdbd8af3793395d2568dde34b4d9703eeacaa13e695421a279848b7417"
+    },
+    {
+      "id": "listen_veneer",
+      "address": 471227376,
+      "offset": 1661364,
+      "count": 8,
+      "fnv": 3830054179,
+      "sha256": "994ad420a23e4e86d95a0148f970c9d453321f67861e829d0b3d142533120998"
+    },
+    {
+      "id": "accept4_veneer",
+      "address": 471227168,
+      "offset": 1661156,
+      "count": 8,
+      "fnv": 1986343340,
+      "sha256": "48dad5560f23e5ae23f2360ea584681941a66421d3cfbe5c4b295502bc28c2d6"
+    },
+    {
+      "id": "recv_veneer",
+      "address": 471238568,
+      "offset": 1672556,
+      "count": 8,
+      "fnv": 3644471523,
+      "sha256": "3c92f26f71bae3f9fe875bb53ac284e5c5cc08669354f4cdd1c8acd20173cc0e"
+    },
+    {
+      "id": "close_socket",
+      "address": 471158172,
+      "offset": 1592160,
+      "count": 84,
+      "fnv": 1959789960,
+      "sha256": "a365d809df466ef64f83b8601d1facefe1da7050064d8e87322071748f199819"
+    },
+    {
+      "id": "event_enum_stock_consumer",
+      "address": 210623780,
+      "offset": 8510756,
+      "count": 196,
+      "fnv": 2175063984,
+      "sha256": "0b710351f361b69a895d1963bc02b8e5dd45725754e48ea7183cb0e4c837891d"
+    },
+    {
+      "id": "status_open_veneer",
+      "address": 210497280,
+      "offset": 8384256,
+      "count": 8,
+      "fnv": 1573110118,
+      "sha256": "cbbb5b604dff4c4d5ee201d3296a4283d0a32bb1b90fae5566a5a1ad064a16fa"
+    },
+    {
+      "id": "status_read_veneer",
+      "address": 210496240,
+      "offset": 8383216,
+      "count": 8,
+      "fnv": 4108081779,
+      "sha256": "d2381ce7845194ea07559fcf432b65bbbc70bad63cd73e5c7b02c532b6f734ce"
+    },
+    {
+      "id": "status_write_veneer",
+      "address": 210493504,
+      "offset": 8380480,
+      "count": 8,
+      "fnv": 1892749604,
+      "sha256": "797c775ffca1dcf048a90d96e314f9235cc3ef34a3597401a3f047e8aeca2155"
+    },
+    {
+      "id": "status_close_veneer",
+      "address": 210492328,
+      "offset": 8379304,
+      "count": 8,
+      "fnv": 1484121897,
+      "sha256": "8c52df7e8bc49b63a9c5a4cfaaa436c4fbcfab3e6050357d183a5f405e9c9172"
+    },
+    {
+      "id": "unlink_veneer",
+      "address": 210497488,
+      "offset": 8384464,
+      "count": 8,
+      "fnv": 2322033037,
+      "sha256": "5a5a08c9b0e3893b5e4910c05bd62bb0299d81b59a164fd2f2c1ebdd1a8ae968"
+    },
+    {
+      "id": "unlink_impl",
+      "address": 471177492,
+      "offset": 1611480,
+      "count": 280,
+      "fnv": 2440331302,
+      "sha256": "54619216a8a1fb4c2eeb240e28eed27238c370db3958675afe71642f132a213b"
+    },
+    {
+      "id": "file_fsync",
+      "address": 471178824,
+      "offset": 1612812,
+      "count": 64,
+      "fnv": 1820444915,
+      "sha256": "9e4fc30c97a2ad068968625f020ce9f463411e5a1e59dbad7326cb36b79e5f2a"
+    },
+    {
+      "id": "fsync_fd",
+      "address": 471178888,
+      "offset": 1612876,
+      "count": 108,
+      "fnv": 4173031228,
+      "sha256": "c83ef04676f3f26ada0d3562d985d771409e660dcce19841832d73b643a6f751"
+    },
+    {
+      "id": "file_get",
+      "address": 471156480,
+      "offset": 1590468,
+      "count": 156,
+      "fnv": 3693947477,
+      "sha256": "014ce2c6198901e3303a403b5ab0e38ec0a539ee6485e0e91b538a426be87cac"
+    },
+    {
+      "id": "file_put",
+      "address": 471156636,
+      "offset": 1590624,
+      "count": 88,
+      "fnv": 3959063671,
+      "sha256": "9e8c413fc989d227008a5bb5685e943a5be7de7716bcf71d38ba41a40f708f05"
+    },
+    {
+      "id": "socket_type_nonblock",
+      "address": 211052148,
+      "offset": 8939124,
+      "count": 164,
+      "fnv": 556873365,
+      "sha256": "887bc7cd11670ec5acbbe06b1e48185268ce324a2874069bc6dfbb848f677303"
+    },
+    {
+      "id": "psock_nonblock",
+      "address": 210972528,
+      "offset": 8859504,
+      "count": 168,
+      "fnv": 2547049437,
+      "sha256": "2afac3cc28061c96ea7384b46a0f73739b8ad356ec2a7ff81577fedf72516f12"
+    },
+    {
+      "id": "accept4_nonblock",
+      "address": 210970808,
+      "offset": 8857784,
+      "count": 176,
+      "fnv": 1938564609,
+      "sha256": "10694551833db2dcc1b3ddf092b61f460ebad086e8b02756844bf0d578defc87"
+    },
+    {
+      "id": "rpmsg_accept_handshake",
+      "address": 211014568,
+      "offset": 8901544,
+      "count": 232,
+      "fnv": 3788932944,
+      "sha256": "062f2227ef75d5db15ae09dfc9ec15bb8b18057b90135cc635d0b0e5b4c16a59"
+    },
+    {
+      "id": "rpmsg_recv_nonblock",
+      "address": 211013892,
+      "offset": 8900868,
+      "count": 564,
+      "fnv": 3899915868,
+      "sha256": "13b7e3471951ad6d3f236c8bc28373c35a90d392d4f409b924c3d2cafa64fc19"
+    },
+    {
+      "id": "rpmsg_interface_table",
+      "address": 472580096,
+      "offset": 3014084,
+      "count": 72,
+      "fnv": 816669638,
+      "sha256": "ea6aa946042a37d47bd50062445d6635bd9f0bc2f61c0d4fa142a868b685a7ba"
+    },
+    {
+      "id": "errno_tls",
+      "address": 206534972,
+      "offset": 4421948,
+      "count": 20,
+      "fnv": 3009441504,
+      "sha256": "52ddd6dc1d40f75c364ecfd57e8122ad401e585b37d439122ac73c7f097351b1"
+    },
+    {
+      "id": "blocks_procfs_format",
+      "address": 471185812,
+      "offset": 1619800,
+      "count": 144,
+      "fnv": 2027337430,
+      "sha256": "644b72c8fad9e45b9641c4abe94cf95845959e6ae06fae8ef3fd12f5645b34d5"
+    },
+    {
+      "id": "nxsig_usleep",
+      "address": 206342968,
+      "offset": 4229944,
+      "count": 64,
+      "fnv": 4038776065,
+      "sha256": "ddf28308a7ab5671e0f6b4eeaec005f11475be9089c56c1df6d57c8f90d0b0ce"
+    },
+    {
+      "id": "nxsig_nanosleep",
+      "address": 206342076,
+      "offset": 4229052,
+      "count": 256,
+      "fnv": 3727162466,
+      "sha256": "7ca3b064c6c53899ff328673d50525b012cf0b7208cf9dae06dda6e231096f6b"
+    },
+    {
+      "id": "clock_elapsed",
+      "address": 206315076,
+      "offset": 4202052,
+      "count": 16,
+      "fnv": 1626765902,
+      "sha256": "06bde8efdcff5e3d2a03e482891d11cc65bc30f6b185cbde1fa9780868ddd7d4"
+    },
+    {
+      "id": "clock_systime",
+      "address": 206315996,
+      "offset": 4202972,
+      "count": 36,
+      "fnv": 2400290048,
+      "sha256": "56182d0b32a6493cd7ac7e84cd33984e551510ec5be3fa4934b5f2de54483740"
+    },
+    {
+      "id": "clock_hardware_ticks",
+      "address": 206415156,
+      "offset": 4302132,
+      "count": 144,
+      "fnv": 3726030852,
+      "sha256": "4c3c3048dee50550d1b36fd2ae49a5a68c359712624de387a2acabc0196d1946"
+    },
+    {
+      "id": "module_locked_initializer",
+      "address": 206326188,
+      "offset": 4213164,
+      "count": 312,
+      "fnv": 672802162,
+      "sha256": "4d6d01dac969706e6c806d711fcad0ec2d6adacc0400a91f27cb99ad4a11d6ac"
+    },
+    {
+      "id": "task_spawn",
+      "address": 206345972,
+      "offset": 4232948,
+      "count": 216,
+      "fnv": 1919895160,
+      "sha256": "a1131c0ed1669256f6b3fa689e1ff4ea00b16b14e77d8f1d407dcb55b19fed2b"
+    },
+    {
+      "id": "task_spawn_initialize",
+      "address": 206343340,
+      "offset": 4230316,
+      "count": 208,
+      "fnv": 3323600888,
+      "sha256": "b5467884ed2cdb9e5619f2effcddd24ec5caa86ba9c2e2bb1dbca50c308e406c"
+    },
+    {
+      "id": "task_spawn_entry_arguments",
+      "address": 206344168,
+      "offset": 4231144,
+      "count": 312,
+      "fnv": 2897346149,
+      "sha256": "7a03cabec51a49cc3586722d754e656339e81148de94c14ec4ba102a28bc6316"
+    },
+    {
+      "id": "task_getpid",
+      "address": 206345900,
+      "offset": 4232876,
+      "count": 36,
+      "fnv": 3650569029,
+      "sha256": "600db9799262a4ee59dbaf31e3cb3b4f14964904915538e04893be4df6220fae"
+    },
+    {
+      "id": "task_pid_lookup_critical",
+      "address": 206330948,
+      "offset": 4217924,
+      "count": 76,
+      "fnv": 844631299,
+      "sha256": "600b62939dc515187309071d142dbe19b36e5770c933cfce31f5539505767923"
+    },
+    {
+      "id": "task_attributes_init",
+      "address": 206560456,
+      "offset": 4447432,
+      "count": 64,
+      "fnv": 212487823,
+      "sha256": "75bb42c05bc857bbf41e3b558a1b06588df452d058979ad05513e58f5176df97"
+    },
+    {
+      "id": "task_attributes_stack",
+      "address": 206560616,
+      "offset": 4447592,
+      "count": 36,
+      "fnv": 2450288796,
+      "sha256": "129064f3e2aeffc3d62cf297880854310a8d60ba45676f905e8d2de1f94f47b0"
+    }
+  ],
+  "audio_evidence": [
+    {
+      "id": "image_header",
+      "offset": 0,
+      "count": 288,
+      "sha256": "888f24daacb02dbd3c2d45dd0885963d6b194c0eed2fe0261627d8ad7cd05601"
+    },
+    {
+      "id": "amoviesink_filter_descriptor",
+      "offset": 2785572,
+      "count": 80,
+      "sha256": "ac2ea3b32432ef38dc27f8a9c98ee2f21b7f9a9a608eceaf65128e44a210b8ac"
+    },
+    {
+      "id": "amoviesink_process_command",
+      "offset": 1273628,
+      "count": 1424,
+      "sha256": "f6bcb971e57ab66d050c90b9f5f181201037cc18d57a661368bd16ebf64a584e"
+    },
+    {
+      "id": "wav_muxer_class",
+      "offset": 2852480,
+      "count": 80,
+      "sha256": "898d01efecb88543e0fe63dc73a0e67d4643e832ba6a353eb12e6ada998c83ab"
+    }
+  ],
+  "callable": {
+    "open": 470000009,
+    "set_event": 470000197,
+    "start": 470000909,
+    "pause": 470000941,
+    "close": 470000105,
+    "rpc_once": 470004449,
+    "socket": 471235729,
+    "bind": 471237097,
+    "listen": 471227377,
+    "accept4": 471227169,
+    "recv": 471238569,
+    "close_socket": 471158173
+  },
+  "cpu": "audio",
+  "rpc_target": "ap",
+  "rpmsg": {
+    "family": 65,
+    "cpu_offset": 2,
+    "name_offset": 18,
+    "field_bytes": 16,
+    "bind_bytes": 128
+  },
+  "events": {
+    "prepared": 1,
+    "started": 2,
+    "paused": 3,
+    "stopped": 4,
+    "seeked": 5,
+    "completed": 6
+  },
+  "notes": [
+    "No event callback/firmware function was executed by this generator.",
+    "STOPPED enum is proven in AP consumers; exact commercial tail delivery remains a physical acceptance gate.",
+    "No set_next_output or commercial segment muxer support is asserted."
+  ]
+}

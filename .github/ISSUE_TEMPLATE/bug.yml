@@ -1,0 +1,48 @@
+name: 录音或导出问题
+description: 提交可复现的步骤，不上传个人录音或设备身份。
+body:
+  - type: input
+    id: version
+    attributes:
+      label: 项目版本与源码或安装包哈希
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: 手表型号和完整固件版本
+      description: 只写型号和版本；不要写序列号、MAC 地址或配对信息。
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: 出错环节
+      options:
+        - 构建或兼容性检查
+        - 开始或计时
+        - 暂停或继续
+        - 结束或保存
+        - 状态恢复
+        - 已复制文件的 WAV 导出
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 操作步骤、实际结果与期望结果
+      description: 说明是否息屏、是否是模拟测试；不需要上传录音内容。
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: 可选的脱敏错误类别或测试输出
+      description: 不要粘贴私密构建文件、原始固件、密钥或真实录音。
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已移除录音、逐字稿、设备标识、个人路径和密钥。
+          required: true

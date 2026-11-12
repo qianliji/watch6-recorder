@@ -1,0 +1,312 @@
+{
+  "reference_ap_sha256": "a19b601477569765103eaf468b937bd8026b4d68ffa5c896bde222a79e475858",
+  "firmware": "P65 3.100.043",
+  "device_execution": false,
+  "physical_verified": false,
+  "status": "explicit-play candidate; exact pinned image only",
+  "windows": [
+    {
+      "id": "fixed_rpc_once",
+      "address": 470004448,
+      "offset": 438436,
+      "count": 464,
+      "fnv": 2917212751,
+      "sha256": "2af15d8c2a9edf37cf831a640bd0e5f5f503649cc3aaa8692e4073c13968012b"
+    },
+    {
+      "id": "cpu_audio_literal_selection",
+      "address": 470004912,
+      "offset": 438900,
+      "count": 356,
+      "fnv": 3940074885,
+      "sha256": "1caa101b9c0fe4ee9e855a09bf266bfaab556922ed490b9bdb1fbc0181cfab1f"
+    },
+    {
+      "id": "proxy_disconnect_joins_thread",
+      "address": 470004088,
+      "offset": 438076,
+      "count": 100,
+      "fnv": 1481177633,
+      "sha256": "875b3c08119afdd6659ee10e49b1b42bda7354462e584ee8c55d7549c806a912"
+    },
+    {
+      "id": "status_open_veneer",
+      "address": 210497280,
+      "offset": 8384256,
+      "count": 8,
+      "fnv": 1573110118,
+      "sha256": "cbbb5b604dff4c4d5ee201d3296a4283d0a32bb1b90fae5566a5a1ad064a16fa"
+    },
+    {
+      "id": "status_read_veneer",
+      "address": 210496240,
+      "offset": 8383216,
+      "count": 8,
+      "fnv": 4108081779,
+      "sha256": "d2381ce7845194ea07559fcf432b65bbbc70bad63cd73e5c7b02c532b6f734ce"
+    },
+    {
+      "id": "status_write_veneer",
+      "address": 210493504,
+      "offset": 8380480,
+      "count": 8,
+      "fnv": 1892749604,
+      "sha256": "797c775ffca1dcf048a90d96e314f9235cc3ef34a3597401a3f047e8aeca2155"
+    },
+    {
+      "id": "status_close_veneer",
+      "address": 210492328,
+      "offset": 8379304,
+      "count": 8,
+      "fnv": 1484121897,
+      "sha256": "8c52df7e8bc49b63a9c5a4cfaaa436c4fbcfab3e6050357d183a5f405e9c9172"
+    },
+    {
+      "id": "unlink_veneer",
+      "address": 210497488,
+      "offset": 8384464,
+      "count": 8,
+      "fnv": 2322033037,
+      "sha256": "5a5a08c9b0e3893b5e4910c05bd62bb0299d81b59a164fd2f2c1ebdd1a8ae968"
+    },
+    {
+      "id": "unlink_impl",
+      "address": 471177492,
+      "offset": 1611480,
+      "count": 280,
+      "fnv": 2440331302,
+      "sha256": "54619216a8a1fb4c2eeb240e28eed27238c370db3958675afe71642f132a213b"
+    },
+    {
+      "id": "file_fsync",
+      "address": 471178824,
+      "offset": 1612812,
+      "count": 64,
+      "fnv": 1820444915,
+      "sha256": "9e4fc30c97a2ad068968625f020ce9f463411e5a1e59dbad7326cb36b79e5f2a"
+    },
+    {
+      "id": "fsync_fd",
+      "address": 471178888,
+      "offset": 1612876,
+      "count": 108,
+      "fnv": 4173031228,
+      "sha256": "c83ef04676f3f26ada0d3562d985d771409e660dcce19841832d73b643a6f751"
+    },
+    {
+      "id": "file_get",
+      "address": 471156480,
+      "offset": 1590468,
+      "count": 156,
+      "fnv": 3693947477,
+      "sha256": "014ce2c6198901e3303a403b5ab0e38ec0a539ee6485e0e91b538a426be87cac"
+    },
+    {
+      "id": "file_put",
+      "address": 471156636,
+      "offset": 1590624,
+      "count": 88,
+      "fnv": 3959063671,
+      "sha256": "9e8c413fc989d227008a5bb5685e943a5be7de7716bcf71d38ba41a40f708f05"
+    },
+    {
+      "id": "errno_tls",
+      "address": 206534972,
+      "offset": 4421948,
+      "count": 20,
+      "fnv": 3009441504,
+      "sha256": "52ddd6dc1d40f75c364ecfd57e8122ad401e585b37d439122ac73c7f097351b1"
+    },
+    {
+      "id": "blocks_procfs_format",
+      "address": 471185812,
+      "offset": 1619800,
+      "count": 144,
+      "fnv": 2027337430,
+      "sha256": "644b72c8fad9e45b9641c4abe94cf95845959e6ae06fae8ef3fd12f5645b34d5"
+    },
+    {
+      "id": "nxsig_usleep",
+      "address": 206342968,
+      "offset": 4229944,
+      "count": 64,
+      "fnv": 4038776065,
+      "sha256": "ddf28308a7ab5671e0f6b4eeaec005f11475be9089c56c1df6d57c8f90d0b0ce"
+    },
+    {
+      "id": "nxsig_nanosleep",
+      "address": 206342076,
+      "offset": 4229052,
+      "count": 256,
+      "fnv": 3727162466,
+      "sha256": "7ca3b064c6c53899ff328673d50525b012cf0b7208cf9dae06dda6e231096f6b"
+    },
+    {
+      "id": "clock_elapsed",
+      "address": 206315076,
+      "offset": 4202052,
+      "count": 16,
+      "fnv": 1626765902,
+      "sha256": "06bde8efdcff5e3d2a03e482891d11cc65bc30f6b185cbde1fa9780868ddd7d4"
+    },
+    {
+      "id": "clock_systime",
+      "address": 206315996,
+      "offset": 4202972,
+      "count": 36,
+      "fnv": 2400290048,
+      "sha256": "56182d0b32a6493cd7ac7e84cd33984e551510ec5be3fa4934b5f2de54483740"
+    },
+    {
+      "id": "clock_hardware_ticks",
+      "address": 206415156,
+      "offset": 4302132,
+      "count": 144,
+      "fnv": 3726030852,
+      "sha256": "4c3c3048dee50550d1b36fd2ae49a5a68c359712624de387a2acabc0196d1946"
+    },
+    {
+      "id": "module_locked_initializer",
+      "address": 206326188,
+      "offset": 4213164,
+      "count": 312,
+      "fnv": 672802162,
+      "sha256": "4d6d01dac969706e6c806d711fcad0ec2d6adacc0400a91f27cb99ad4a11d6ac"
+    },
+    {
+      "id": "task_spawn",
+      "address": 206345972,
+      "offset": 4232948,
+      "count": 216,
+      "fnv": 1919895160,
+      "sha256": "a1131c0ed1669256f6b3fa689e1ff4ea00b16b14e77d8f1d407dcb55b19fed2b"
+    },
+    {
+      "id": "task_spawn_initialize",
+      "address": 206343340,
+      "offset": 4230316,
+      "count": 208,
+      "fnv": 3323600888,
+      "sha256": "b5467884ed2cdb9e5619f2effcddd24ec5caa86ba9c2e2bb1dbca50c308e406c"
+    },
+    {
+      "id": "task_spawn_entry_arguments",
+      "address": 206344168,
+      "offset": 4231144,
+      "count": 312,
+      "fnv": 2897346149,
+      "sha256": "7a03cabec51a49cc3586722d754e656339e81148de94c14ec4ba102a28bc6316"
+    },
+    {
+      "id": "task_getpid",
+      "address": 206345900,
+      "offset": 4232876,
+      "count": 36,
+      "fnv": 3650569029,
+      "sha256": "600db9799262a4ee59dbaf31e3cb3b4f14964904915538e04893be4df6220fae"
+    },
+    {
+      "id": "task_pid_lookup_critical",
+      "address": 206330948,
+      "offset": 4217924,
+      "count": 76,
+      "fnv": 844631299,
+      "sha256": "600b62939dc515187309071d142dbe19b36e5770c933cfce31f5539505767923"
+    },
+    {
+      "id": "task_attributes_init",
+      "address": 206560456,
+      "offset": 4447432,
+      "count": 64,
+      "fnv": 212487823,
+      "sha256": "75bb42c05bc857bbf41e3b558a1b06588df452d058979ad05513e58f5176df97"
+    },
+    {
+      "id": "task_attributes_stack",
+      "address": 206560616,
+      "offset": 4447592,
+      "count": 36,
+      "fnv": 2450288796,
+      "sha256": "129064f3e2aeffc3d62cf297880854310a8d60ba45676f905e8d2de1f94f47b0"
+    },
+    {
+      "id": "player_open",
+      "address": 469998524,
+      "offset": 432512,
+      "count": 96,
+      "fnv": 1905673392,
+      "sha256": "ba03c46e62dc7a4f8a0158091c6f3ad96523eedb20e3ea4202cb5251d634793f"
+    },
+    {
+      "id": "player_close_and_join",
+      "address": 469998620,
+      "offset": 432608,
+      "count": 92,
+      "fnv": 1921545321,
+      "sha256": "2b1a21a97fe44f77da3f3c6750776117f4c9cab329b490ef04f5688519fa24e8"
+    },
+    {
+      "id": "player_set_event",
+      "address": 469998712,
+      "offset": 432700,
+      "count": 76,
+      "fnv": 2321928093,
+      "sha256": "b084e05d3fc7448e831773e78554b3ae8184afd51fb1034831a6354a11bf94f9"
+    },
+    {
+      "id": "player_prepare_file",
+      "address": 469998788,
+      "offset": 432776,
+      "count": 352,
+      "fnv": 2686020244,
+      "sha256": "6fe2fea3e4b949e8c8e5c4aecf9316a25077108c49889a0f7c40386339026df3"
+    },
+    {
+      "id": "player_start",
+      "address": 469999440,
+      "offset": 433428,
+      "count": 40,
+      "fnv": 2104919556,
+      "sha256": "081b536127fe4d3dd05f79b751a43aa57f3743793a0583179da5c8340ebe65d8"
+    },
+    {
+      "id": "player_stop",
+      "address": 469999480,
+      "offset": 433468,
+      "count": 72,
+      "fnv": 3564217586,
+      "sha256": "5efe5ccb9991e368ae6baa8860d85ce66d238e130a16694ba97b5e85561fbafd"
+    },
+    {
+      "id": "player_pause",
+      "address": 469999552,
+      "offset": 433540,
+      "count": 32,
+      "fnv": 944521276,
+      "sha256": "cd70b4c940f7b06b76031584f51c2215023fef6e10869886933cd892d015b40a"
+    },
+    {
+      "id": "player_get_position",
+      "address": 469999740,
+      "offset": 433728,
+      "count": 64,
+      "fnv": 177183147,
+      "sha256": "b7c1b8cee15296d8cd1b9754319567e4289db0b34ca998aa351959b7078c3928"
+    }
+  ],
+  "callable": {
+    "open": 469998525,
+    "close": 469998621,
+    "set_event": 469998713,
+    "prepare": 469998789,
+    "start": 469999441,
+    "pause": 469999553,
+    "stop": 469999481,
+    "get_position": 469999741
+  },
+  "upstream": "https://github.com/open-vela/frameworks_multimedia_media/blob/dev/include/media_player.h",
+  "limitations": [
+    "Speaker routing/focus and EOF audibility require physical acceptance.",
+    "Unsealed or partial capture is never advertised as complete playback."
+  ]
+}

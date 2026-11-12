@@ -1,0 +1,13 @@
+{
+  "package": "com.watch6.recorder",
+  "name": "录音连接组件",
+  "versionName": "0.5.0",
+  "versionCode": 6,
+  "minAPILevel": 2,
+  "icon": "/common/icon.png",
+  "deviceTypeList": ["watch"],
+  "features": [{"name":"system.interconnect"}],
+  "config":{"logLevel":"error","designWidth":432},
+  "router":{"entry":"pages/index","pages":{"pages/index":{"component":"index"}}},
+  "display":{"backgroundColor":"#090909","titleBar":false}
+}

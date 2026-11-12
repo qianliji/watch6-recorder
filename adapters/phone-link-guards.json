@@ -1,0 +1,335 @@
+{
+  "reference_ap_sha256": "a19b601477569765103eaf468b937bd8026b4d68ffa5c896bde222a79e475858",
+  "firmware": "P65 3.100.043",
+  "status": "static candidate; not device validated",
+  "device_execution": false,
+  "tests_run": false,
+  "loop_bytes": 640,
+  "timer_storage_bytes": 160,
+  "connection_bytes": 20,
+  "message_bytes": 20,
+  "worker_stack_bytes": 8192,
+  "module_name": "w6rxlink",
+  "windows": [
+    {
+      "id": "open_veneer",
+      "address": 210497280,
+      "offset": 8384256,
+      "count": 8,
+      "fnv": 1573110118,
+      "sha256": "cbbb5b604dff4c4d5ee201d3296a4283d0a32bb1b90fae5566a5a1ad064a16fa"
+    },
+    {
+      "id": "read_veneer",
+      "address": 210496240,
+      "offset": 8383216,
+      "count": 8,
+      "fnv": 4108081779,
+      "sha256": "d2381ce7845194ea07559fcf432b65bbbc70bad63cd73e5c7b02c532b6f734ce"
+    },
+    {
+      "id": "write_veneer",
+      "address": 210493504,
+      "offset": 8380480,
+      "count": 8,
+      "fnv": 1892749604,
+      "sha256": "797c775ffca1dcf048a90d96e314f9235cc3ef34a3597401a3f047e8aeca2155"
+    },
+    {
+      "id": "close_veneer",
+      "address": 210492328,
+      "offset": 8379304,
+      "count": 8,
+      "fnv": 1484121897,
+      "sha256": "8c52df7e8bc49b63a9c5a4cfaaa436c4fbcfab3e6050357d183a5f405e9c9172"
+    },
+    {
+      "id": "module_locked_initializer",
+      "address": 206326188,
+      "offset": 4213164,
+      "count": 312,
+      "fnv": 672802162,
+      "sha256": "4d6d01dac969706e6c806d711fcad0ec2d6adacc0400a91f27cb99ad4a11d6ac"
+    },
+    {
+      "id": "task_spawn",
+      "address": 206345972,
+      "offset": 4232948,
+      "count": 216,
+      "fnv": 1919895160,
+      "sha256": "a1131c0ed1669256f6b3fa689e1ff4ea00b16b14e77d8f1d407dcb55b19fed2b"
+    },
+    {
+      "id": "task_spawn_initialize",
+      "address": 206343340,
+      "offset": 4230316,
+      "count": 208,
+      "fnv": 3323600888,
+      "sha256": "b5467884ed2cdb9e5619f2effcddd24ec5caa86ba9c2e2bb1dbca50c308e406c"
+    },
+    {
+      "id": "task_spawn_entry_arguments",
+      "address": 206344168,
+      "offset": 4231144,
+      "count": 312,
+      "fnv": 2897346149,
+      "sha256": "7a03cabec51a49cc3586722d754e656339e81148de94c14ec4ba102a28bc6316"
+    },
+    {
+      "id": "task_getpid",
+      "address": 206345900,
+      "offset": 4232876,
+      "count": 36,
+      "fnv": 3650569029,
+      "sha256": "600db9799262a4ee59dbaf31e3cb3b4f14964904915538e04893be4df6220fae"
+    },
+    {
+      "id": "task_pid_lookup_critical",
+      "address": 206330948,
+      "offset": 4217924,
+      "count": 76,
+      "fnv": 844631299,
+      "sha256": "600b62939dc515187309071d142dbe19b36e5770c933cfce31f5539505767923"
+    },
+    {
+      "id": "task_attributes_init",
+      "address": 206560456,
+      "offset": 4447432,
+      "count": 64,
+      "fnv": 212487823,
+      "sha256": "75bb42c05bc857bbf41e3b558a1b06588df452d058979ad05513e58f5176df97"
+    },
+    {
+      "id": "task_attributes_stack",
+      "address": 206560616,
+      "offset": 4447592,
+      "count": 36,
+      "fnv": 2450288796,
+      "sha256": "129064f3e2aeffc3d62cf297880854310a8d60ba45676f905e8d2de1f94f47b0"
+    },
+    {
+      "id": "uv_loop_init",
+      "address": 207774560,
+      "offset": 5661536,
+      "count": 424,
+      "fnv": 3243510720,
+      "sha256": "c19c47ece95a5c6784d74a4b15c7e9509bb35314905b53e0be6274fa32a22dc6"
+    },
+    {
+      "id": "uv_loop_close",
+      "address": 207795496,
+      "offset": 5682472,
+      "count": 104,
+      "fnv": 760019549,
+      "sha256": "27794e225043b409348e24bdf65d032209fa4551e64b8f08c0ff2f5487b9378e"
+    },
+    {
+      "id": "uv_loop_cleanup",
+      "address": 207774984,
+      "offset": 5661960,
+      "count": 164,
+      "fnv": 2221072066,
+      "sha256": "c916c93444fd463852fc402c7d098b5a7ce05aae37c432257e8ed48574b1de05"
+    },
+    {
+      "id": "uv_global_tls",
+      "address": 207775264,
+      "offset": 5662240,
+      "count": 176,
+      "fnv": 1650108810,
+      "sha256": "3d32d347ef7a3450e69133332db1677853e4ee7faea6d00db5ae448e08c4ef22"
+    },
+    {
+      "id": "uv_global_tls_destructor",
+      "address": 207775148,
+      "offset": 5662124,
+      "count": 24,
+      "fnv": 513554632,
+      "sha256": "eb6a54a2d480afcdce5eb65576b650815eeb3b9086649e405a26ac7df91ae8e6"
+    },
+    {
+      "id": "uv_run",
+      "address": 207757512,
+      "offset": 5644488,
+      "count": 844,
+      "fnv": 2369719655,
+      "sha256": "f0bb0f5da24ebdea33b41b3956f4ed7b008b6d516639d86863777ee147b5f3a8"
+    },
+    {
+      "id": "uv_close",
+      "address": 207757208,
+      "offset": 5644184,
+      "count": 204,
+      "fnv": 1406149280,
+      "sha256": "4902607215f28c3868ec525f23b34dd92fa686cc93cd03d7d3815bd8f5861257"
+    },
+    {
+      "id": "uv_timer_init",
+      "address": 207789520,
+      "offset": 5676496,
+      "count": 68,
+      "fnv": 824835491,
+      "sha256": "3b3849e02fc58ce880af3259b4f6c17628dd6e98e393cf760048ff71c2a21f70"
+    },
+    {
+      "id": "uv_timer_stop",
+      "address": 207789588,
+      "offset": 5676564,
+      "count": 416,
+      "fnv": 1515239752,
+      "sha256": "da0db2367406721b9ec1e5f31e4b529d5b14d07428aa0a805ba4a654aec8a25d"
+    },
+    {
+      "id": "uv_timer_start",
+      "address": 207790004,
+      "offset": 5676980,
+      "count": 416,
+      "fnv": 127871269,
+      "sha256": "be0e67dee56a851341e5f7882fbcad4b40696ba17845161649731fa01ff52b0f"
+    },
+    {
+      "id": "uv_timer_close",
+      "address": 207790752,
+      "offset": 5677728,
+      "count": 12,
+      "fnv": 212666058,
+      "sha256": "c657c0a33ac181a58757eb43c52e765177e54bb09aa892a30e17a33d245958ef"
+    },
+    {
+      "id": "uv_timer_existing_caller",
+      "address": 211696742,
+      "offset": 9583718,
+      "count": 192,
+      "fnv": 503235004,
+      "sha256": "6284011fefa25a5bb30e7e1dad0e131f357d63d60fe2b4781e6a610205c7142f"
+    },
+    {
+      "id": "miwear_connect",
+      "address": 207805852,
+      "offset": 5692828,
+      "count": 200,
+      "fnv": 2588675010,
+      "sha256": "05346a57100f2659437670b65e0afff6408085fba79daf37957a52d433cadcf7"
+    },
+    {
+      "id": "miwear_send_dispatch",
+      "address": 207806052,
+      "offset": 5693028,
+      "count": 236,
+      "fnv": 922103075,
+      "sha256": "9abba688ac7b4ce9e88052197888852631e0267d593444f221bf67534fa7c267"
+    },
+    {
+      "id": "miwear_client_send",
+      "address": 207803920,
+      "offset": 5690896,
+      "count": 248,
+      "fnv": 2479164652,
+      "sha256": "6e2a84310e5c8af1c44a7a836eddc8a4826a7d8d2a9f3712773bd95c4de233a8"
+    },
+    {
+      "id": "miwear_write_done",
+      "address": 207804704,
+      "offset": 5691680,
+      "count": 136,
+      "fnv": 2040010848,
+      "sha256": "b7d1cda97ad9f745f4ad8543d03944184424b165c33421f3fd87134b9c7c4385"
+    },
+    {
+      "id": "miwear_stream_receive",
+      "address": 207803504,
+      "offset": 5690480,
+      "count": 416,
+      "fnv": 2360559157,
+      "sha256": "6b63be6a9a3d226176c49a77b2441526c2211e5a263bbf4c9c04fdb665b1c81b"
+    },
+    {
+      "id": "miwear_reader",
+      "address": 207804168,
+      "offset": 5691144,
+      "count": 372,
+      "fnv": 1401344287,
+      "sha256": "376b0702dbf19d407a78f32e1e0f23d1bf54d46c2ebb4b88869b6b95ee776788"
+    },
+    {
+      "id": "miwear_pipe_connected",
+      "address": 207804540,
+      "offset": 5691516,
+      "count": 164,
+      "fnv": 326234076,
+      "sha256": "47725eb925e903823cadd53d06ab82b8b117e06c954abe03c57b87789f2cfbbb"
+    },
+    {
+      "id": "miwear_reader_start",
+      "address": 207805084,
+      "offset": 5692060,
+      "count": 148,
+      "fnv": 932540173,
+      "sha256": "cc207edd97b98711bc1d2295b83cc921641be56d57fc3995b5e0446f03fe5d10"
+    },
+    {
+      "id": "miwear_close",
+      "address": 207806288,
+      "offset": 5693264,
+      "count": 40,
+      "fnv": 960523435,
+      "sha256": "8d882abb6318221bac673d18c2aa8d387bfeb1ec845008b422f43d3032f0a47e"
+    },
+    {
+      "id": "miwear_close_callback",
+      "address": 207803260,
+      "offset": 5690236,
+      "count": 28,
+      "fnv": 2192008205,
+      "sha256": "cfd6656e77cccb577e7e49a3f1ee29fda1ed9609289e79d6c129adc92cd571cc"
+    },
+    {
+      "id": "miwear_close_cancel_and_free",
+      "address": 207803060,
+      "offset": 5690036,
+      "count": 180,
+      "fnv": 1116217681,
+      "sha256": "04511c17d425710fa78c727a99d6ed98717fcf33162dc282cad91e10c311cf9f"
+    },
+    {
+      "id": "miwear_reader_disconnect",
+      "address": 207803240,
+      "offset": 5690216,
+      "count": 20,
+      "fnv": 2474851907,
+      "sha256": "1e71eec75c97dfd78bb50f45320cd773817f3cf744127234a3a7d6ff66c10d29"
+    },
+    {
+      "id": "miwear_existing_callback",
+      "address": 211618576,
+      "offset": 9505552,
+      "count": 304,
+      "fnv": 826225584,
+      "sha256": "20ef115059f7ed740ba49af522c5fde0648c9b27adb9fbf942f22298e4e16f4b"
+    },
+    {
+      "id": "miwear_stock_message",
+      "address": 209904108,
+      "offset": 7791084,
+      "count": 84,
+      "fnv": 2785840607,
+      "sha256": "e79f5b584cb7e2330473cefd73cf6b324269c5aecba4945d5e7ff8fafabdc3bf"
+    },
+    {
+      "id": "malloc",
+      "address": 206615200,
+      "offset": 4502176,
+      "count": 128,
+      "fnv": 2590495167,
+      "sha256": "875212de8a8684019b12bebedd2ef601799fb95582da787fefa1c1e80e6cb5d1"
+    },
+    {
+      "id": "free",
+      "address": 206615132,
+      "offset": 4502108,
+      "count": 72,
+      "fnv": 2954907398,
+      "sha256": "3c2a02f636438883ea49fa40039c96011161eb428aea77b9333e7ff027a52677"
+    }
+  ]
+}

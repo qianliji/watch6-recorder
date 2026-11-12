@@ -1,0 +1,7 @@
+{
+  "java_home": "",
+  "android_home": "",
+  "build_tools": "",
+  "android_jar": "",
+  "sdk_jars": ["path/to/authorized/xms-wearable-1.4.jar"]
+}

@@ -1,0 +1,255 @@
+{
+  "project": "Watch6 Recorder",
+  "version": "0.5.3",
+  "source_basis": "Extracted from the maintained VoiceSpace continuous-native implementation; new standalone interface/UI/export/tests authored for this project. Source origins and license scope are recorded, not an independent legal ownership certification.",
+  "files": [
+    {
+      "path": "native/host_adapter.c",
+      "origin": "phone-voice/watch-native/continuous-native/host_adapter.c",
+      "origin_sha256": "be5e5508367cfb169b0e5e200b348fa8ba580c5a5c4de1f41629cce2b868b2b5",
+      "extracted_sha256": "61f491895ef8ee074d58b33cdcc195072866b9fb586b2356c63af0a2f3eb56e5",
+      "modifications": "Separate namespace; local-archive termination and no phone receipt processing where applicable. Headers/comments retained.",
+      "current_release_sha256": "61f491895ef8ee074d58b33cdcc195072866b9fb586b2356c63af0a2f3eb56e5"
+    },
+    {
+      "path": "native/host_fs.c",
+      "origin": "phone-voice/watch-native/continuous-native/host_fs.c",
+      "origin_sha256": "1cdcf4ac5f4b2e7ec1ebbf7e46d7237bfcde13648329a7d958be7a311843cbaf",
+      "extracted_sha256": "4157d9824c10babf9d9f8c9b5db8cfbc86093af8529a2e20430b7937fc7800c4",
+      "modifications": "Separate namespace; local-archive termination and no phone receipt processing where applicable. Headers/comments retained.",
+      "current_release_sha256": "4157d9824c10babf9d9f8c9b5db8cfbc86093af8529a2e20430b7937fc7800c4"
+    },
+    {
+      "path": "native/native-source.c",
+      "origin": "phone-voice/watch-native/continuous-native/native-source.c",
+      "origin_sha256": "19982364f584f8378913c5195f679e6dbde795d51a7131b1f1ff27e84b3b02e9",
+      "extracted_sha256": "19982364f584f8378913c5195f679e6dbde795d51a7131b1f1ff27e84b3b02e9",
+      "modifications": "Separate namespace; local-archive termination and no phone receipt processing where applicable. Headers/comments retained.",
+      "current_release_sha256": "19982364f584f8378913c5195f679e6dbde795d51a7131b1f1ff27e84b3b02e9"
+    },
+    {
+      "path": "native/owner-runtime.c",
+      "origin": "phone-voice/watch-native/continuous-native/owner-runtime.c",
+      "origin_sha256": "8f8bb3848b557d754b9ec3aa99845682ff71820b3585ef69579f3df43fd22357",
+      "extracted_sha256": "4c0790228870cdc26463b9ebf2f90373c2d9ab144a665ca248a0943ec711b363",
+      "modifications": "Separate namespace; local-archive termination and no phone receipt processing where applicable. Headers/comments retained.",
+      "current_release_sha256": "4c0790228870cdc26463b9ebf2f90373c2d9ab144a665ca248a0943ec711b363"
+    },
+    {
+      "path": "native/owner-runtime.h",
+      "origin": "phone-voice/watch-native/continuous-native/owner-runtime.h",
+      "origin_sha256": "619b94bc8370c098f74197387bc3bc5ecbe43c883359fd2335f98b78fe1bfa8b",
+      "extracted_sha256": "619b94bc8370c098f74197387bc3bc5ecbe43c883359fd2335f98b78fe1bfa8b",
+      "modifications": "Separate namespace; local-archive termination and no phone receipt processing where applicable. Headers/comments retained.",
+      "current_release_sha256": "619b94bc8370c098f74197387bc3bc5ecbe43c883359fd2335f98b78fe1bfa8b"
+    },
+    {
+      "path": "native/p65-fs.c",
+      "origin": "phone-voice/watch-native/continuous-native/p65-fs.c",
+      "origin_sha256": "c0cb056a36a194228afb46b64b39aed4fb3a028f43e17c329d144a38e6bb121a",
+      "extracted_sha256": "a93909af3a1628c5b6b17b7a072c5896112507d3111778b728dcca03f7c3fd92",
+      "modifications": "Separate namespace; local-archive termination and no phone receipt processing where applicable. Headers/comments retained.",
+      "current_release_sha256": "a93909af3a1628c5b6b17b7a072c5896112507d3111778b728dcca03f7c3fd92"
+    },
+    {
+      "path": "native/p65-fs.h",
+      "origin": "phone-voice/watch-native/continuous-native/p65-fs.h",
+      "origin_sha256": "048d11dde374b60bce163fed7294709ec0f17b868afa693e40ab4838b649ca46",
+      "extracted_sha256": "4f1520f997129eb96f187d4d65df805b9fa08699c3d36b11dc8abfe5833a837a",
+      "modifications": "Separate namespace; local-archive termination and no phone receipt processing where applicable. Headers/comments retained.",
+      "current_release_sha256": "4f1520f997129eb96f187d4d65df805b9fa08699c3d36b11dc8abfe5833a837a"
+    },
+    {
+      "path": "native/p65-media.c",
+      "origin": "phone-voice/watch-native/continuous-native/p65-media.c",
+      "origin_sha256": "986a0398272c2f3eb262f5d3187ca6aaefffad20281783a74fca9b85dbd6fdf5",
+      "extracted_sha256": "f6ec70d0f2e26d9ffecba9e2e77be0474c9c9d37a7b8c2e7501870be84bcd6e2",
+      "modifications": "Separate namespace; local-archive termination and no phone receipt processing where applicable. Headers/comments retained.",
+      "current_release_sha256": "f6ec70d0f2e26d9ffecba9e2e77be0474c9c9d37a7b8c2e7501870be84bcd6e2"
+    },
+    {
+      "path": "native/p65-media.h",
+      "origin": "phone-voice/watch-native/continuous-native/p65-media.h",
+      "origin_sha256": "d02cca5686a0d285e476d2e3b7eae4db6d81b4c6fcab3c0ee34a119a2ba2bcfd",
+      "extracted_sha256": "1bb0684202ead95e4ab68aaf03ea1a3b1351bb86515e68e8b705af8a419bc03a",
+      "modifications": "Separate namespace; local-archive termination and no phone receipt processing where applicable. Headers/comments retained.",
+      "current_release_sha256": "1bb0684202ead95e4ab68aaf03ea1a3b1351bb86515e68e8b705af8a419bc03a"
+    },
+    {
+      "path": "native/p65-owner.c",
+      "origin": "phone-voice/watch-native/continuous-native/p65-owner.c",
+      "origin_sha256": "70f5e8bde94a0f5b1073ec8fbafe5ead15f75e729d2bea9f412652f073b17270",
+      "extracted_sha256": "fd6f0ac1f29df161a849564a6739e1f8ee3dad7d1943f64876a2c68f143009be",
+      "modifications": "Separate namespace; local-archive termination and no phone receipt processing where applicable. Headers/comments retained.",
+      "current_release_sha256": "fd6f0ac1f29df161a849564a6739e1f8ee3dad7d1943f64876a2c68f143009be"
+    },
+    {
+      "path": "native/p65-owner.h",
+      "origin": "phone-voice/watch-native/continuous-native/p65-owner.h",
+      "origin_sha256": "8624f3cf79fa726be53616daa017b32670a6bb310c574194400c45ef89b575aa",
+      "extracted_sha256": "8df827ae99748fa43c57102f73f3abd4744888e444186576cfe0e29c78c78f5f",
+      "modifications": "Separate namespace; local-archive termination and no phone receipt processing where applicable. Headers/comments retained.",
+      "current_release_sha256": "8df827ae99748fa43c57102f73f3abd4744888e444186576cfe0e29c78c78f5f"
+    },
+    {
+      "path": "native/profile.py",
+      "origin": "phone-voice/watch-native/continuous-native/profile.py",
+      "origin_sha256": "95d8047d376be56bb6407041149ce739656a40e5a709ad2257a34c1c4699631a",
+      "extracted_sha256": "0d5e33a16098ca713d22749b39d404ac3677298cfd289be6ea93f53b960d4c45",
+      "modifications": "Separate namespace; local-archive termination and no phone receipt processing where applicable. Headers/comments retained.",
+      "current_release_sha256": "0d5e33a16098ca713d22749b39d404ac3677298cfd289be6ea93f53b960d4c45"
+    },
+    {
+      "path": "native/spool.c",
+      "origin": "phone-voice/watch-native/continuous-native/spool.c",
+      "origin_sha256": "7f680987f29c8aaca29f7d4de64bf9a1686fb32d07c89e79fbea0266c2dec13e",
+      "extracted_sha256": "7f680987f29c8aaca29f7d4de64bf9a1686fb32d07c89e79fbea0266c2dec13e",
+      "modifications": "Separate namespace; local-archive termination and no phone receipt processing where applicable. Headers/comments retained.",
+      "current_release_sha256": "7f680987f29c8aaca29f7d4de64bf9a1686fb32d07c89e79fbea0266c2dec13e"
+    },
+    {
+      "path": "native/spool.h",
+      "origin": "phone-voice/watch-native/continuous-native/spool.h",
+      "origin_sha256": "cf4dc0c1640217eb16d50b0eedff1294cf70e60f4e6c1c2de08784da055c31db",
+      "extracted_sha256": "0c01458d3ec0156332ed511fe5afbe8a70f9b68d8505494488ccbfccfcb2fb5c",
+      "modifications": "Separate namespace; local-archive termination and no phone receipt processing where applicable. Headers/comments retained.",
+      "current_release_sha256": "0c01458d3ec0156332ed511fe5afbe8a70f9b68d8505494488ccbfccfcb2fb5c"
+    },
+    {
+      "path": "native/status.c",
+      "origin": "phone-voice/watch-native/continuous-native/status.c",
+      "origin_sha256": "08eb8cba0d4121e480e6ed4332cc70619322d4db8c113b33bd328d85a4220b56",
+      "extracted_sha256": "a3cb2f9521464fbd92d983990a7dfcf36bb4c5fdaa4c3398f008dd25dbf313c8",
+      "modifications": "Separate namespace; local-archive termination and no phone receipt processing where applicable. Headers/comments retained.",
+      "current_release_sha256": "a3cb2f9521464fbd92d983990a7dfcf36bb4c5fdaa4c3398f008dd25dbf313c8"
+    },
+    {
+      "path": "native/status.h",
+      "origin": "phone-voice/watch-native/continuous-native/status.h",
+      "origin_sha256": "bd89e58ec99029c17e18f55568b9065a80b03300c65f04c8503133565cdbe6f4",
+      "extracted_sha256": "a4e4a50f4fd2307b68cd6b298d582bf0a2431bf983967bc0865d0489aab9cbc8",
+      "modifications": "Separate namespace; local-archive termination and no phone receipt processing where applicable. Headers/comments retained.",
+      "current_release_sha256": "a4e4a50f4fd2307b68cd6b298d582bf0a2431bf983967bc0865d0489aab9cbc8"
+    },
+    {
+      "path": "src/source.lua",
+      "origin": "phone-voice/watch-native/meeting-source.lua",
+      "origin_sha256": "f8399821f6817e9b421556c3a2fccb906c55c3c501f1312fbc054afbe4bd21ec",
+      "extracted_sha256": "23ca7ac439d3ce20260952e2896514e0c42f401cb809692d5d2b1bbdced180c6",
+      "modifications": "Standalone interface and bounded local catalog/recovery configuration; no cloud or phone dependency.",
+      "current_release_sha256": "54ee8d2f278b3b1b8672bfaa20ae9ee7e2eadd94eff41e0f46c9b4f9af9d2817"
+    },
+    {
+      "path": "src/json.lua",
+      "origin": "phone-voice/watch-native/inline-json.lua",
+      "origin_sha256": "5cfe4891716f9572e9121becc1f706ee22a13d22875a7003b8350a4df10af997",
+      "extracted_sha256": "6bb661a0479da50925587a41d200ed5eafc71a5468867e514cfacd2dc1a4fe34",
+      "modifications": "Standalone interface and bounded local catalog/recovery configuration; no cloud or phone dependency.",
+      "current_release_sha256": "6bb661a0479da50925587a41d200ed5eafc71a5468867e514cfacd2dc1a4fe34"
+    },
+    {
+      "path": "build_settings.py",
+      "origin": "phone-voice/watch-native/build_settings.py",
+      "origin_sha256": "2337643945ced8d0c058c396ebd49ebea4f17d5d3420b08b44560074fc78678f",
+      "extracted_sha256": "de843a764835e5c12a379778344b19c9b5b61d5689cfd99ca6b4b8a25743f7de",
+      "modifications": "Standalone interface and bounded local catalog/recovery configuration; no cloud or phone dependency.",
+      "current_release_sha256": "de843a764835e5c12a379778344b19c9b5b61d5689cfd99ca6b4b8a25743f7de"
+    },
+    {
+      "path": "native/entry.ld",
+      "origin": "phone-voice/watch-native/entry.ld",
+      "origin_sha256": "858c3f9abad2cd6ac2037315d8fbb08f11a9981bf70ba473a7029eb04555eadc",
+      "extracted_sha256": "858c3f9abad2cd6ac2037315d8fbb08f11a9981bf70ba473a7029eb04555eadc",
+      "modifications": "Standalone interface and bounded local catalog/recovery configuration; no cloud or phone dependency.",
+      "current_release_sha256": "858c3f9abad2cd6ac2037315d8fbb08f11a9981bf70ba473a7029eb04555eadc"
+    }
+  ],
+  "not_included": [
+    "firmware images",
+    "precompiled vendor modules",
+    "SDK/JAR",
+    "Android signing material",
+    "private build paths",
+    "Mi8WfBinTool.java external packer source"
+  ],
+  "external_packer": {
+    "provided_by_builder": true,
+    "license_status": "not cleared by this repository; separate dependency",
+    "redistributed": false
+  },
+  "unverified": [
+    "physical GATT pairing, MITM execution, RPA rotation, radio throughput and background power behavior",
+    "actual watch speaker route, audio focus and end audibility",
+    "device-specific adaptation/binary redistribution rights under applicable terms"
+  ],
+  "release_additions": {
+    "playback": [
+      "src/archive.lua",
+      "src/playback.lua",
+      "native/player.c",
+      "native/player.h",
+      "native/player_profile.py"
+    ],
+    "wireless_origin_record": "docs/TRANSPORT_PROVENANCE.md",
+    "phone_origin_record": "phone-app/SOURCE_PROVENANCE.json",
+    "orchestration": [
+      "src/app.lua",
+      "src/transfer.lua",
+      "src/main.lua",
+      "src/ui.lua"
+    ],
+    "rights_scope": "Project-authored code only; exact firmware ABI mapping is not a vendor authorization or binary redistribution certification.",
+    "direct_transport": [
+      "src/direct-link.lua",
+      "src/link-migration.lua",
+      "native/reverse-ble-p65.c",
+      "native/reverse-ble-owner.c",
+      "native/reverse-export-fs.c",
+      "native/reverse-wire.c"
+    ],
+    "current_runtime": {
+      "identity_rpk_required": false,
+      "fitness_sdk_required": false,
+      "phone_role": "advertiser and GATT server",
+      "watch_role": "scanner and GATT client",
+      "api": "docs/DIRECT_LINK_API.md"
+    },
+    "registry_query": {
+      "files": [
+        "src/registry.lua",
+        "native/registry-query.c",
+        "native/registry-query.h",
+        "tools/registry_profile.py"
+      ],
+      "basis": "audited P65 recursive loader lock and module registry foreach, with new bounded name-only census; no module entry invocation",
+      "historical_reference": "phone-voice/watch-native/GUI-ATTACH.md",
+      "runtime": "one-shot query, no task or retained callback, unloaded immediately",
+      "why": "P65 proc module formatter truncates rows with unload callbacks"
+    }
+  },
+  "direct_wire_origin": {
+    "project": "existing VoiceSpace",
+    "files": [
+      {
+        "path": "native/reverse-wire.c",
+        "origin_relative_path": "phone-voice/watch-native/ble-wire/wire.c",
+        "origin_sha256": "8ed45dfabc6a21bea60353502183f202676d39cf2f65d9bc9f8731a1fc473acd",
+        "current_sha256": "324656b3bdac577da8d8b916cd4c525479764bae29120e92e1d5976f3ad18ea5",
+        "changes": "include filename and line ending normalization"
+      },
+      {
+        "path": "native/reverse-wire.h",
+        "origin_relative_path": "phone-voice/watch-native/ble-wire/wire.h",
+        "origin_sha256": "c7de847c68472ac8233c34c7eb5e05efddc1f21085c2f93a57259ede88d032b1",
+        "current_sha256": "1e2280d6829459c031975db5390c7b21d98fe966c39dba8779c05b59f32db73d",
+        "changes": "line ending normalization"
+      }
+    ]
+  },
+  "active_product": {
+    "capture": "watchface native capture",
+    "transport": "mifitness",
+    "standalone_rpk_capture": false,
+    "independent_ble_experiment_in_release": false
+  }
+}

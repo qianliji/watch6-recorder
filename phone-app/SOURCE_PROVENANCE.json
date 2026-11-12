@@ -1,0 +1,44 @@
+{
+  "version": "0.5.1",
+  "release": "0.5.1",
+  "scope": "Project-authored MiFitness companion; vendor SDK rights remain separate",
+  "restored_project_files": [
+    {
+      "file": "src/com/watch6/recorder/PhoneLink.java",
+      "origin": "Watch6-Recorder-Source-0.2.0-preview.zip",
+      "changes": "MiFitness transport restored with bounded queues, generation leases, valid-protocol readiness confirmation and controlled automatic recovery; service shutdown rejects stale queued work"
+    },
+    {
+      "file": "src/com/watch6/recorder/WatchListenerLease.java",
+      "origin": "Watch6-Recorder-Source-0.2.0-preview.zip",
+      "changes": "Known SDK listener ownership retained across service generations"
+    }
+  ],
+  "archived_runtime_dependencies": [
+    "direct BLE GATT server",
+    "DirectHandshake",
+    "DirectDiagnostics",
+    "DirectCallbackLease",
+    "blewire/WireSession"
+  ],
+  "externals_not_in_source": [
+    "authorized Xiaomi wearable SDK JAR",
+    "Android SDK/build-tools",
+    "JSON-java JVM-only test dependency",
+    "development/release signing keys"
+  ],
+  "service_keys_required": false,
+  "phone_microphone_required": false,
+  "internet_permission_required": false,
+  "identity_component_required": true,
+  "identity_component_daily_launch_required": false,
+  "identity_component": {
+    "version": "0.5.0",
+    "version_code": 6,
+    "role": "MiFitness communication identity only; watchface owns recording and playback",
+    "microphone_api": false,
+    "native_payload": false,
+    "replaces_capture_check_version_code": 4,
+    "signer": "Project signer shared with the Android companion"
+  }
+}

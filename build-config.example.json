@@ -1,0 +1,6 @@
+{
+  "arm_toolchain": "./external/arm-toolchain",
+  "firmware_directory": "./external/firmware",
+  "java_home": "./external/jdk",
+  "external_packer_source": "./external/compatible-packer/Mi8WfBinTool.java"
+}

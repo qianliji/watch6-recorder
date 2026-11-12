@@ -1,0 +1,49 @@
+name: Recorder source checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  host:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      VOICESPACE_ARM_TOOLCHAIN: /usr
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-build.txt
+      # Host regression includes ARM playback/export emulation; it needs the
+      # compiler even when the additional capture-core suite is not selected.
+      - run: sudo apt-get update && sudo apt-get install --no-install-recommends -y gcc-arm-none-eabi binutils-arm-none-eabi
+      - run: python -m pip install -r requirements-build.txt
+      - run: python tests/run_all.py --host-only
+      - run: python tools/package_source.py --check-only
+
+  native-core:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      VOICESPACE_ARM_TOOLCHAIN: /usr
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update && sudo apt-get install --no-install-recommends -y gcc-arm-none-eabi binutils-arm-none-eabi
+      - run: python -m pip install -r requirements-build.txt
+      - run: python tests/run_all.py --native
+      # This job executes the portable C core against synthetic I/O. It does
+      # not build a flash image, load device firmware, or certify a watch.

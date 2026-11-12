@@ -1,0 +1,12 @@
+.local-build.json
+.test-deps/
+libs/
+signing/
+build/
+artifacts/
+__pycache__/
+watch-identity/node_modules/
+watch-identity/sign/
+watch-identity/build/
+watch-identity/dist/
+watch-identity/.build-history/

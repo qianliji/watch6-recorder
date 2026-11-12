@@ -1,0 +1,15 @@
+# MiFitness transport 0.4.0-preview
+
+PhoneLink uses the authorized Xiaomi wearable SDK MessageApi/NodeApi/AuthApi/ServiceApi through MiFitness. It does not create a GATT server or scan globally. The wearable application's package and signing certificate must match the Android application for isWearAppInstalled and SDK DEVICE_MANAGER authorization.
+
+The first visible connect action may request SDK authorization. Service/boot restoration checks existing authorization without opening UI. After a matching installed component is confirmed, one owned SDK message listener is serialized by WatchListenerLease. The identity component need not run daily. This remains a two-package watch setup until the separately investigated single-RPK bootstrap path is verified.
+
+Payloads remain bounded UTF-8 JSON, at most 4096 bytes, using the recorder_* protocol in Protocol.java. Message sender must equal the selected SDK node. No BLE diagnostic nonce, direct confirmation, pairing code or direct-wire envelope is accepted by this transport. There is no phone microphone or network permission.
+
+Each connection generation has a lease. Received payloads are cloned before bounded main-handler admission. Asynchronous durable disk work carries that lease; replies are accepted only on the same current generation. SDK service disconnection, listener-install timeout, missing permission, close and disconnected health checks invalidate the generation. Known listener cleanup completes before another owner registers. Unknown pending SDK operations are not removed as if they were known resources.
+
+SDK send completion is not a durable receipt. Protocol.handle generates recorder acknowledgements only after ArchiveStore persists the byte frontier. Partial WAV and receipt state survive receiver recreation. Exact retransmissions are idempotent; contradictory data never replaces an already durable frontier. Full saved audio is checksum verified before playback, sharing or copying to Download.
+
+Queues: 16 inbound callbacks (max 4096 bytes each), 8 waiting replies and one SDK send in flight. Idle health query interval 60000ms; recent active traffic skips it. Retry delays 1000/3000/10000/30000/60000ms. Query timeout 10000ms, listener observation 12000ms, send observation 10000ms. No unconditional keepalive messages, idle WakeLock or auto-export initiation.
+
+Diagnostics transport=mifitness_sdk. phase values: idle, connecting, watch_unavailable, fitness_unavailable, authorization_required, authorizing, checking_identity, identity_required, subscribing, listener_pending, ready, service_disconnected, retrying, permission_required, closed. last_error_code is historical: 101 SDK initialization, 111 query timeout, 112 service disconnection, 113 target watch unavailable, 114 node query failure, 201–205 authorization, 301–303 identity check, 401–402 listener setup, 501–502 send, 601 Android permission. Counters are process-local; no node IDs, device names, addresses, content or secrets are exported.

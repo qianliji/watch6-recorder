@@ -1,0 +1,796 @@
+{
+  "project": "Watch6 Recorder",
+  "version": "0.5.3",
+  "license": "MIT",
+  "candidate_only": true,
+  "physical_verified": false,
+  "transport": "mifitness",
+  "fitness_required": true,
+  "identity_rpk_required": true,
+  "standalone_capture_probe_included": false,
+  "independent_ble_sources_included": false,
+  "external_firmware_or_packer_included": false,
+  "private_configuration_included": false,
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug.yml",
+      "bytes": 1436,
+      "sha256": "312dbe057bf169e944ac45042fa1df62eb235d25e265bc8e23122ce035057c4a"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "bytes": 448,
+      "sha256": "c58bd649f11f6c414bd96295d0ed3dd621ef1b68cba06c1365bf282fc4f93876"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 1824,
+      "sha256": "099f31fa4230619e8f309e0758979213e5f0f2ce36271b4f7c9fb67e4318010a"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 328,
+      "sha256": "14a55627f46eeb298cf6e3d294cc34583c0eb59d64e560eca7560ceab06c87bf"
+    },
+    {
+      "path": "adapters/loader-guards.json",
+      "bytes": 2015,
+      "sha256": "6c625d6b834ce60fbbc0216117d8516ee55e51490b3b495cfedfa981158fd757"
+    },
+    {
+      "path": "adapters/phone-link-guards.h",
+      "bytes": 2125,
+      "sha256": "d89754464bc06cd2c02d11a8150309b9be0be61efed81e22bf71b1605bd87d9d"
+    },
+    {
+      "path": "adapters/phone-link-guards.json",
+      "bytes": 9766,
+      "sha256": "59382cdeb91be2b9bd2fb957a23590f83a6ce1cdde1a789859b40ed953ee8448"
+    },
+    {
+      "path": "adapters/platform-guards.json",
+      "bytes": 7496,
+      "sha256": "a56647dceecc400fe72235f1f0988e62f1af7f104a0eaaafbc6689d1c37c98f0"
+    },
+    {
+      "path": "adapters/player-guards.json",
+      "bytes": 9187,
+      "sha256": "f5f8f8acaf7e51a78e1620d0659cc64c0d4359493049d19eb1233059247bd731"
+    },
+    {
+      "path": "adapters/registry-guards.json",
+      "bytes": 3588,
+      "sha256": "7b3d59b4cf4aabf8d1f6cc9266061578741527e7860d765888f9ded6431cc0f1"
+    },
+    {
+      "path": "assets/preview.png",
+      "bytes": 1859568,
+      "sha256": "bd768be3453b411991916cf30fdec07d0d759b9bffaab70012951fbc626ca30b"
+    },
+    {
+      "path": "build-config.example.json",
+      "bytes": 208,
+      "sha256": "77dbbaa6a391155604496772a9b189d3a664539a6ed604e37f5b7d84250eca00"
+    },
+    {
+      "path": "build.py",
+      "bytes": 14768,
+      "sha256": "063a5a5fe9bcf238f8040edf4c5c1c489215b550636f4c1452e756c1765d538e"
+    },
+    {
+      "path": "build_settings.py",
+      "bytes": 6101,
+      "sha256": "de843a764835e5c12a379778344b19c9b5b61d5689cfd99ca6b4b8a25743f7de"
+    },
+    {
+      "path": "BUILDING.md",
+      "bytes": 5954,
+      "sha256": "e405299077a9178cd599265b387ed98ae26da703df39293585d2b592dd4f8196"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1575,
+      "sha256": "a6721a829632ea0e7ede10d15ad60d09352ed4b223dd9e334043c488527ed4ae"
+    },
+    {
+      "path": "docs/COMPATIBILITY.md",
+      "bytes": 2641,
+      "sha256": "0e1fa97be45d77fc8d54aeec5d4e96688c8497ce235ee485a16664628e9ed2ee"
+    },
+    {
+      "path": "docs/DELIVERY_ROUTE_20261108.md",
+      "bytes": 3847,
+      "sha256": "4b76e5e9f97912e5a20ec3ebd90782c0948bc85c28e0cea5c2f16ad1694d034d"
+    },
+    {
+      "path": "docs/FEATURES.md",
+      "bytes": 4068,
+      "sha256": "ef96ee681143dfb367c5762b1fafb8c2a3ae18d68c72c2dc948250a7d4ae255c"
+    },
+    {
+      "path": "docs/IP_REVIEW.md",
+      "bytes": 13798,
+      "sha256": "f7768451e6dbbe8d8178f104f4c1c4673e301e85874f47e30fae214322560661"
+    },
+    {
+      "path": "docs/LICENSE_OPTIONS_20261107.md",
+      "bytes": 5593,
+      "sha256": "4989359b1c8096f2e1c783170968956b428a2e58d8157a034e22373d5d48d2e5"
+    },
+    {
+      "path": "docs/OPEN_SOURCE_PLAN.md",
+      "bytes": 15678,
+      "sha256": "7ca90427d62d9458521b7438f68ca3eddaa1202e0820875389d25c8680260415"
+    },
+    {
+      "path": "docs/PHONE_LINK_API.md",
+      "bytes": 5705,
+      "sha256": "37fb0177e700055f623ff19724fdc2b54752f311a294713fd6a09708ff13ac15"
+    },
+    {
+      "path": "docs/PUBLISHING.md",
+      "bytes": 4428,
+      "sha256": "0aaac0cf2e280102916f141ef7f2d7e18f46b38cae54db1446db85b677ce3486"
+    },
+    {
+      "path": "docs/RELEASE_0.2.0.md",
+      "bytes": 3928,
+      "sha256": "b8994e3a27a3a50f4b775bb3372625f370e7523980beb311458d8cdc1464b3d4"
+    },
+    {
+      "path": "docs/RELEASE_0.4.0.md",
+      "bytes": 2419,
+      "sha256": "8645cc1fddabff6f479f2b42462b3132be7d74207c55a6f0fbd0f8722e368960"
+    },
+    {
+      "path": "docs/RELEASE_0.4.1.md",
+      "bytes": 2904,
+      "sha256": "1207295e4e884d12b0cc9bbcceb52f8032aec1876410a09b436e6cc67fdc9760"
+    },
+    {
+      "path": "docs/RELEASE_0.5.0.md",
+      "bytes": 3861,
+      "sha256": "c433ba50c79b74f3a6ae384f5b6e31d012eafaede862680f6dc27562cb8319f7"
+    },
+    {
+      "path": "docs/RELEASE_0.5.3.md",
+      "bytes": 2388,
+      "sha256": "375ce5765c37bf390af93fa09189493b77182f6683554f0b28b4aa42dc8aaba5"
+    },
+    {
+      "path": "docs/TRANSPORT_PROVENANCE.md",
+      "bytes": 5137,
+      "sha256": "f3805d071f07cd9666a62c59699aa54d1238919234622471ecfee06c62224352"
+    },
+    {
+      "path": "docs/WIRELESS_EXPORT_PROTOCOL.md",
+      "bytes": 4652,
+      "sha256": "d8b2ee84ee34fc2136c18059e0e28e5ce81e154932361feadcb88a3f70e1593e"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1085,
+      "sha256": "bd263be2057d2c4c4dfac3976cfd7e4e0e0535d9ed2cfd87f14edef557664510"
+    },
+    {
+      "path": "native/entry.ld",
+      "bytes": 334,
+      "sha256": "858c3f9abad2cd6ac2037315d8fbb08f11a9981bf70ba473a7029eb04555eadc"
+    },
+    {
+      "path": "native/export-relay-fs.c",
+      "bytes": 6053,
+      "sha256": "0f1c69aaca9fa99b956aa87d18221752884b2ef688284d745b4c1a4eed43e895"
+    },
+    {
+      "path": "native/export-relay-fs.h",
+      "bytes": 369,
+      "sha256": "3b576f2e95e3d848301d2b6382d712259a58f821e96a4c50782a8e5ab55fc170"
+    },
+    {
+      "path": "native/export-relay-json.c",
+      "bytes": 6774,
+      "sha256": "25c3ce027b433a1b2658afd99702855ca66ba7ea06c38e1ec324105b96ee74c8"
+    },
+    {
+      "path": "native/export-relay-json.h",
+      "bytes": 773,
+      "sha256": "ee69eaf8f45d9314d33d49a07d5450f81f96a85367c22ab23c6d6ddb9d14e46b"
+    },
+    {
+      "path": "native/export-relay.c",
+      "bytes": 9131,
+      "sha256": "b2d28efb26f69a81b024a9a11915f42c981d95f7af7661d9690a546078c24d97"
+    },
+    {
+      "path": "native/export-relay.h",
+      "bytes": 2104,
+      "sha256": "b53f6f6fab39ead3ad72a2822735b659251040bee7f60f17c0a96e9ed401f03b"
+    },
+    {
+      "path": "native/host_adapter.c",
+      "bytes": 8902,
+      "sha256": "61f491895ef8ee074d58b33cdcc195072866b9fb586b2356c63af0a2f3eb56e5"
+    },
+    {
+      "path": "native/host_fs.c",
+      "bytes": 10390,
+      "sha256": "4157d9824c10babf9d9f8c9b5db8cfbc86093af8529a2e20430b7937fc7800c4"
+    },
+    {
+      "path": "native/native-source.c",
+      "bytes": 1706,
+      "sha256": "19982364f584f8378913c5195f679e6dbde795d51a7131b1f1ff27e84b3b02e9"
+    },
+    {
+      "path": "native/owner-runtime.c",
+      "bytes": 2878,
+      "sha256": "4c0790228870cdc26463b9ebf2f90373c2d9ab144a665ca248a0943ec711b363"
+    },
+    {
+      "path": "native/owner-runtime.h",
+      "bytes": 976,
+      "sha256": "619b94bc8370c098f74197387bc3bc5ecbe43c883359fd2335f98b78fe1bfa8b"
+    },
+    {
+      "path": "native/p65-fs.c",
+      "bytes": 13373,
+      "sha256": "a93909af3a1628c5b6b17b7a072c5896112507d3111778b728dcca03f7c3fd92"
+    },
+    {
+      "path": "native/p65-fs.h",
+      "bytes": 1500,
+      "sha256": "4f1520f997129eb96f187d4d65df805b9fa08699c3d36b11dc8abfe5833a837a"
+    },
+    {
+      "path": "native/p65-media.c",
+      "bytes": 8275,
+      "sha256": "f6ec70d0f2e26d9ffecba9e2e77be0474c9c9d37a7b8c2e7501870be84bcd6e2"
+    },
+    {
+      "path": "native/p65-media.h",
+      "bytes": 1025,
+      "sha256": "1bb0684202ead95e4ab68aaf03ea1a3b1351bb86515e68e8b705af8a419bc03a"
+    },
+    {
+      "path": "native/p65-owner.c",
+      "bytes": 14879,
+      "sha256": "fd6f0ac1f29df161a849564a6739e1f8ee3dad7d1943f64876a2c68f143009be"
+    },
+    {
+      "path": "native/p65-owner.h",
+      "bytes": 384,
+      "sha256": "8df827ae99748fa43c57102f73f3abd4744888e444186576cfe0e29c78c78f5f"
+    },
+    {
+      "path": "native/phone-link.c",
+      "bytes": 25204,
+      "sha256": "8a1ae91345d11051a597a1924ef81ed2763e2509b665a1d6eaae4dacf393d84f"
+    },
+    {
+      "path": "native/player-profile.h",
+      "bytes": 1274,
+      "sha256": "812a8c96afef54bdd4d2a44c94febe788f59f18baf2ad5ab0a9284be46bfbfba"
+    },
+    {
+      "path": "native/player.c",
+      "bytes": 19730,
+      "sha256": "2f490fb1ba4108bd22e745ae14b407fd4fe798ab71b1a7eba03c1e1630365e23"
+    },
+    {
+      "path": "native/player.h",
+      "bytes": 505,
+      "sha256": "db92978538426eb29be9246fc0b42a61c10a9055f139737963bc40f2a3d47c19"
+    },
+    {
+      "path": "native/player_profile.py",
+      "bytes": 2961,
+      "sha256": "189753ba4cbf97f23ae4c6c63b2b3be4074dbff000e695b536502fc01ad388c5"
+    },
+    {
+      "path": "native/profile.h",
+      "bytes": 1887,
+      "sha256": "1b826705ca94c4df5480d56092b1b2d3a31e495543284481873751375609ab32"
+    },
+    {
+      "path": "native/profile.json",
+      "bytes": 14267,
+      "sha256": "c9fa891fe41d900249d3597187c548e4e92f242146a87ffca6121d9ef50dca66"
+    },
+    {
+      "path": "native/profile.py",
+      "bytes": 5737,
+      "sha256": "0d5e33a16098ca713d22749b39d404ac3677298cfd289be6ea93f53b960d4c45"
+    },
+    {
+      "path": "native/registry-profile.h",
+      "bytes": 477,
+      "sha256": "ea2c394aa0701ee4b0a1df2593b6a232eb13638569a6ed0b1b1c06ad90c28c1d"
+    },
+    {
+      "path": "native/registry-query.c",
+      "bytes": 6593,
+      "sha256": "763b96d97c0d9c35cb245cffd0062fa0bda991bce959be07d245bc492c1edd6b"
+    },
+    {
+      "path": "native/registry-query.h",
+      "bytes": 689,
+      "sha256": "cea68d1ce5c7826473758a9043dd71e3b77fb87935b858628392c99e9057f626"
+    },
+    {
+      "path": "native/spool.c",
+      "bytes": 9627,
+      "sha256": "7f680987f29c8aaca29f7d4de64bf9a1686fb32d07c89e79fbea0266c2dec13e"
+    },
+    {
+      "path": "native/spool.h",
+      "bytes": 4179,
+      "sha256": "0c01458d3ec0156332ed511fe5afbe8a70f9b68d8505494488ccbfccfcb2fb5c"
+    },
+    {
+      "path": "native/status.c",
+      "bytes": 1581,
+      "sha256": "a3cb2f9521464fbd92d983990a7dfcf36bb4c5fdaa4c3398f008dd25dbf313c8"
+    },
+    {
+      "path": "native/status.h",
+      "bytes": 194,
+      "sha256": "a4e4a50f4fd2307b68cd6b298d582bf0a2431bf983967bc0865d0489aab9cbc8"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 2218,
+      "sha256": "93f06bdcc8b2b3ca828338554034307c9be1611719ec207d85645c793c1ef555"
+    },
+    {
+      "path": "phone-app/.gitignore",
+      "bytes": 200,
+      "sha256": "e13b8e1719cd9df53d2ea01dfecab158001a8b5e501f3aaf3b978ccd7fe3528b"
+    },
+    {
+      "path": "phone-app/AndroidManifest.xml",
+      "bytes": 1912,
+      "sha256": "32df35d39f00323634d4ed318876ae2e3cb5d847eecc22ec38571de4a283eeb0"
+    },
+    {
+      "path": "phone-app/assets/app.js",
+      "bytes": 18060,
+      "sha256": "fc99dde9ca56c6804d1855faf3a9b1b7239a322bb8cf8973da5537ef39221b82"
+    },
+    {
+      "path": "phone-app/assets/index.html",
+      "bytes": 8033,
+      "sha256": "f0f7713dc1c31d720e644261be0ea3544826a3c49f679c97a16f99ee78826dfc"
+    },
+    {
+      "path": "phone-app/assets/style.css",
+      "bytes": 16740,
+      "sha256": "c6eb3da7953cf071413c06f0529997cf1aa7b79f341e2f1de8f403ea461a6e73"
+    },
+    {
+      "path": "phone-app/build-config.example.json",
+      "bytes": 152,
+      "sha256": "ecbaa621cf24cebd9b34137b141afed43614624c94a1fd0c84492391138497f5"
+    },
+    {
+      "path": "phone-app/build.py",
+      "bytes": 8133,
+      "sha256": "20f4b108fffe896d9d83f273a02d172df51fc19704ed350ee5e9644d88825567"
+    },
+    {
+      "path": "phone-app/README.md",
+      "bytes": 4669,
+      "sha256": "c6017a4eef3aea85635d185441b09620dde6e9bb0ee5bcd0671246202945154e"
+    },
+    {
+      "path": "phone-app/res/values/strings.xml",
+      "bytes": 70,
+      "sha256": "f0a39ee880f55f4e12409e40d09f3f66b71f9480d80522439dca0a168d53fa4b"
+    },
+    {
+      "path": "phone-app/SOURCE_PROVENANCE.json",
+      "bytes": 1673,
+      "sha256": "50a2ddf29421f3a2109e6629f46f4dcf8a090c5e0b95690c621f373926b109aa"
+    },
+    {
+      "path": "phone-app/src/com/watch6/recorder/AndroidDirectorySync.java",
+      "bytes": 562,
+      "sha256": "69cc363c62ba0c82d0d66a2296052f3bfa8165baa8be2332299d1a9994799605"
+    },
+    {
+      "path": "phone-app/src/com/watch6/recorder/ArchiveStore.java",
+      "bytes": 15513,
+      "sha256": "f28485895a1b66929cca51dc286d199cf9339d60b8c112b47c025dc41880f5e3"
+    },
+    {
+      "path": "phone-app/src/com/watch6/recorder/MainActivity.java",
+      "bytes": 10640,
+      "sha256": "78384a46f27014d886aea578a3eb0b903ee24810b3519c26f64d82d26ad2681b"
+    },
+    {
+      "path": "phone-app/src/com/watch6/recorder/PhoneLink.java",
+      "bytes": 17230,
+      "sha256": "1d0ec32f72ecc4e42142887f3429373eaa6b3e32aab35ef0354a281ef737f1e8"
+    },
+    {
+      "path": "phone-app/src/com/watch6/recorder/Protocol.java",
+      "bytes": 4723,
+      "sha256": "6552671eb62c1c7f20c860ae4fb831c2ba3eefe4169e2d5513c87c335bdbca6e"
+    },
+    {
+      "path": "phone-app/src/com/watch6/recorder/ReceiverService.java",
+      "bytes": 16502,
+      "sha256": "a995832daea30afeb86d9ea14ffc65f6fd7660f6dd54f817ca459a93d92f3441"
+    },
+    {
+      "path": "phone-app/src/com/watch6/recorder/RecordingProvider.java",
+      "bytes": 2124,
+      "sha256": "ab099282ace110a86b916358cb23b81d73d9a44daf657efb093fc1a4456bf6c4"
+    },
+    {
+      "path": "phone-app/src/com/watch6/recorder/RestoreReceiver.java",
+      "bytes": 638,
+      "sha256": "ac5ae98ae35083c2edc218b5c78325f996fb11613d5f3a37f923f139b3e1bd7b"
+    },
+    {
+      "path": "phone-app/src/com/watch6/recorder/WatchListenerLease.java",
+      "bytes": 4351,
+      "sha256": "9f891859447ff0f85998039a729e3f75eeaf56a8d94e427c86a38d14d06b1a5d"
+    },
+    {
+      "path": "phone-app/tests/ArchiveStoreTest.java",
+      "bytes": 8575,
+      "sha256": "1dd993e967383b0e040d966ef99e84cdfac61e9cac93e873292caa87af376e6f"
+    },
+    {
+      "path": "phone-app/tests/FitnessIdentityReplayHostTest.java",
+      "bytes": 9418,
+      "sha256": "cf3089764d47e293fc549689714073db07c40437b4363c3c0092407f2f7f725f"
+    },
+    {
+      "path": "phone-app/tests/FitnessPhoneLinkHostTest.java",
+      "bytes": 19216,
+      "sha256": "4cd603a3edfe02573167ea72e52a8760eaa19b55a216dc07e61cfb0f70911bca"
+    },
+    {
+      "path": "phone-app/tests/frontend.test.cjs",
+      "bytes": 12906,
+      "sha256": "2de9e2c966ef5ce5b06465920df24064c8363ad0d8a7abcb3030cf756488c1a3"
+    },
+    {
+      "path": "phone-app/tests/ProtocolHarness.java",
+      "bytes": 1132,
+      "sha256": "a1a4bb2438aa7177a937529ce93af720f13a19c2886cc012a9bff74694a01925"
+    },
+    {
+      "path": "phone-app/tests/ProtocolHostTest.java",
+      "bytes": 5727,
+      "sha256": "8e9b75a5b1e1ea9cf4d2e935e3ff4fa79ad8854bdf32a55c74c909671a7be18b"
+    },
+    {
+      "path": "phone-app/tests/ReceiverServiceHostTest.java",
+      "bytes": 17754,
+      "sha256": "2e0b392272830e8c852d4aebc9b753f486f5f47b1058602a9c7c99b65067259e"
+    },
+    {
+      "path": "phone-app/tests/run_fitness_host.py",
+      "bytes": 12509,
+      "sha256": "2cbe0a6c85316608d83bf42d72e54301cfb2780de9f1c3d27623b8307850403a"
+    },
+    {
+      "path": "phone-app/tests/run_fitness_identity_native.py",
+      "bytes": 14482,
+      "sha256": "3b6c084986d8b1b63ced56abda4d52f7ae6bccc267b659a9423659d7bc606f70"
+    },
+    {
+      "path": "phone-app/tests/run_fitness_identity_replay.py",
+      "bytes": 12403,
+      "sha256": "3099f420337da4b1ebf19623013a6851fc4fdfed47b86a406150d2daaafaf2a0"
+    },
+    {
+      "path": "phone-app/tests/run_protocol.py",
+      "bytes": 2811,
+      "sha256": "63a0ce5863aa3c6b8c5146df3a35e6276341bc8fc6d03fdc8c1f36d6c7fe601a"
+    },
+    {
+      "path": "phone-app/tests/run_receiver_host.py",
+      "bytes": 10602,
+      "sha256": "ee5d4af2ce3badcfbdea0c1a7c08c23e0dfabffff19d60bbb4fa05a8b92325a4"
+    },
+    {
+      "path": "phone-app/tests/run_restore_host.py",
+      "bytes": 4229,
+      "sha256": "57cb524acc51106097eee81fc1d8d502d3f76645b6f5c633016db9d2124e6912"
+    },
+    {
+      "path": "phone-app/tests/run_storage.py",
+      "bytes": 1612,
+      "sha256": "15179dbfe8257ce1a5b3744da3a3fd1d135d8e912e4ffadfb672145970ac3524"
+    },
+    {
+      "path": "phone-app/tests/verify_package.py",
+      "bytes": 9228,
+      "sha256": "6482dbf79f4429d157e9380ec95b9448914ac3fbaa72a12fd26756562403028a"
+    },
+    {
+      "path": "phone-app/watch-identity/build.cjs",
+      "bytes": 3735,
+      "sha256": "0c2b0fa6dd44ef9523f02626b728fc633f7cde00dff7628c7a9b745897d0f8ae"
+    },
+    {
+      "path": "phone-app/watch-identity/package.json",
+      "bytes": 151,
+      "sha256": "9af5b03af6726ff5b694d97de6a35483a46e3fc59bfde12d51d1b4a029a3ffab"
+    },
+    {
+      "path": "phone-app/watch-identity/src/app.ux",
+      "bytes": 37,
+      "sha256": "901deadceebf90fbd6d7c379d1fc30781f631d5c4dbb4434e69bab63a31c2bc0"
+    },
+    {
+      "path": "phone-app/watch-identity/src/common/icon.png",
+      "bytes": 260,
+      "sha256": "baf3fab9c2d97bbe256eac17f2f2ffe3e5d213fc4afd2e877de8d111617879ab"
+    },
+    {
+      "path": "phone-app/watch-identity/src/manifest.json",
+      "bytes": 439,
+      "sha256": "ebe7fe1727b444c47e41de5f2a00cda356b921617b35a8ef985b383bf888ad31"
+    },
+    {
+      "path": "phone-app/watch-identity/src/pages/index/index.ux",
+      "bytes": 565,
+      "sha256": "1b8774c47083b899c1c8173ee6ddf8c79178f824329952ca0a9070ff05ec6178"
+    },
+    {
+      "path": "phone-app/WIRE.md",
+      "bytes": 3020,
+      "sha256": "33f751d2887b0e04b09767a38d16bfc83852007d081a9f17243ae8c7676ea630"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4755,
+      "sha256": "dce448fa158d06ff5d75cb1d8c7ab098b668ecc17b489a6721b1b68c0d6b8068"
+    },
+    {
+      "path": "requirements-build.txt",
+      "bytes": 59,
+      "sha256": "3b1d8bda8580df96c9011aa51024a1680301e9ac68581aa777fecbbc5565ed14"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 1100,
+      "sha256": "1ebd89e3542e589b888981e9ceab65ca2657f0358eb95be1a0dbcd82c5d17eb3"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "bytes": 14840,
+      "sha256": "b6a2bc5c38ab6aec81e0fe285caa6633ab546131252668b4a57a8e934dbfa9bc"
+    },
+    {
+      "path": "src/app.lua",
+      "bytes": 6769,
+      "sha256": "06a8a0f17f621f5262d4b1f9f5f5581991d571c3c6be97b6796fb19c0b99ab23"
+    },
+    {
+      "path": "src/archive.lua",
+      "bytes": 15193,
+      "sha256": "9ea3480f7e24eb17694f0755673c81039d0ae90b1f13e3d476e392af133ab89e"
+    },
+    {
+      "path": "src/catalog.lua",
+      "bytes": 2475,
+      "sha256": "2a92991c362823e2ae2031c99c98a6c411d960b2a6e9c677b45d505d069b18b3"
+    },
+    {
+      "path": "src/json.lua",
+      "bytes": 5197,
+      "sha256": "6bb661a0479da50925587a41d200ed5eafc71a5468867e514cfacd2dc1a4fe34"
+    },
+    {
+      "path": "src/main.lua",
+      "bytes": 10339,
+      "sha256": "e537b18acba49d4f34a7241b9e1bc189d8819e1b07bf00d2660db08f73bec3bb"
+    },
+    {
+      "path": "src/phone-link.lua",
+      "bytes": 17525,
+      "sha256": "08aefa34d30ae7c2943dfd31cdfcb4ef4306f0c12b9d1800e42656c5a0787525"
+    },
+    {
+      "path": "src/playback.lua",
+      "bytes": 754,
+      "sha256": "182eda4791d0500119ff457cece1117be0a4a150944006c08e64291aa5c8afcc"
+    },
+    {
+      "path": "src/recorder.lua",
+      "bytes": 7567,
+      "sha256": "55c013aa5cb47a25994d7208ca9d3e589d6332203bc878232d806d74bb04b044"
+    },
+    {
+      "path": "src/registry.lua",
+      "bytes": 3203,
+      "sha256": "a8ca630d614d5b9abcc0d0ea11991619ccf0a4c094cbc7831538b2b27cbd17ac"
+    },
+    {
+      "path": "src/source.lua",
+      "bytes": 23725,
+      "sha256": "54ee8d2f278b3b1b8672bfaa20ae9ee7e2eadd94eff41e0f46c9b4f9af9d2817"
+    },
+    {
+      "path": "src/transfer.lua",
+      "bytes": 5732,
+      "sha256": "a22bd63287b08c5a856cd0075e5f1ec5c3951d47607140edccc3ce5841050d6e"
+    },
+    {
+      "path": "src/ui.lua",
+      "bytes": 21486,
+      "sha256": "dd34d6250a2ebebe6c1ee1ebced8f47871401533bd755d3ec8d0d26d83eb5066"
+    },
+    {
+      "path": "tests/app_flow.lua",
+      "bytes": 3981,
+      "sha256": "d15d7020c11f76a50fc65cc9b330ff67498a2fb9aceea05a3ada57d14e2a8eb4"
+    },
+    {
+      "path": "tests/flow.lua",
+      "bytes": 6065,
+      "sha256": "3aed53a1e04c6a45694eff83c8b6981054a8f9015541e6fb70369091c3181181"
+    },
+    {
+      "path": "tests/module_presence_flow.lua",
+      "bytes": 9803,
+      "sha256": "ec5bada90b36815a83872510acf69cb7887d7bd291e3b3c515a5879398c78e2c"
+    },
+    {
+      "path": "tests/phone_link_flow.lua",
+      "bytes": 6529,
+      "sha256": "ebaf41c15521f01d2d9f6c12b5734ee967098b8d061a8f608aa903dbf39d48f9"
+    },
+    {
+      "path": "tests/playback_flow.lua",
+      "bytes": 8324,
+      "sha256": "e3a87c4a4dcf0c586f783bbc07918656b7f01959dd7104287a4943596b0854c9"
+    },
+    {
+      "path": "tests/playback_host.c",
+      "bytes": 11919,
+      "sha256": "a2e3ae6bbf5d9ecf09a3b78f1d5f682cc125cf71a04829fa10865d27f99008a9"
+    },
+    {
+      "path": "tests/product_player_host.c",
+      "bytes": 534,
+      "sha256": "3566070926c8fca1ea3bf67ae32de58f8c4a083cde1367288105da4ba3e6e254"
+    },
+    {
+      "path": "tests/product_source_host.c",
+      "bytes": 487,
+      "sha256": "8c94ad40c4d88952e5afe6f5b3587e28f0ac1322f3809312939d4d3f98ec3d5e"
+    },
+    {
+      "path": "tests/registry_query_host.c",
+      "bytes": 7188,
+      "sha256": "8ba78a931b001e42a77b20695f91e25566fbfbdb8888355d41c3cd3525a39535"
+    },
+    {
+      "path": "tests/run_all.py",
+      "bytes": 5800,
+      "sha256": "ec22933f97f472546227328763379d1085c8a53a2fb3e50b84c8b29072aa3eb3"
+    },
+    {
+      "path": "tests/runtime_host.c",
+      "bytes": 1206,
+      "sha256": "cd9a99c44739db19b2012268a289a93a0005359c883ec7ce0998226c855724d8"
+    },
+    {
+      "path": "tests/source_flow.lua",
+      "bytes": 5483,
+      "sha256": "bc8084086b7e5e31eae3927825f35759a51bdb1f1bbe04f4931784424d94435f"
+    },
+    {
+      "path": "tests/test_active_release.py",
+      "bytes": 2277,
+      "sha256": "00e6007666a09abd45f6fa1b897068aaa28a6f8ee6f5ab031ae5eb6b52703aa3"
+    },
+    {
+      "path": "tests/test_app_transfer_interactions.py",
+      "bytes": 9505,
+      "sha256": "6d0b868ecb220b26cf5b76ba9ed82ead6f9bb79ec43961fc0869a537573379b7"
+    },
+    {
+      "path": "tests/test_export.py",
+      "bytes": 4437,
+      "sha256": "e96710de2308ae6371ea9c147add5969edfa5e7d7363c57017b0fd4fff0703a2"
+    },
+    {
+      "path": "tests/test_main_integration.py",
+      "bytes": 27416,
+      "sha256": "62048a7c8cb945b5395255c05a8e328c81d5819bf45fe23e54951e8ec603d9db"
+    },
+    {
+      "path": "tests/test_module_presence_adapter.py",
+      "bytes": 1102,
+      "sha256": "4a2f6576fc69e0a31454ef7eb3d9a7ace8adc00562dea6bc10dd8e0b2995afca"
+    },
+    {
+      "path": "tests/test_package_source.py",
+      "bytes": 14325,
+      "sha256": "cf40788ce4f414dd40a650a6f6f344ae33f897a7681bd470f691386f66c11ef8"
+    },
+    {
+      "path": "tests/test_phone_crosslayer.py",
+      "bytes": 4649,
+      "sha256": "9b1b97e90b05476ab22f4071101c87d9222a041a7e8caead0a4b08e67abf2de3"
+    },
+    {
+      "path": "tests/test_phone_link_lua.py",
+      "bytes": 772,
+      "sha256": "5c1cd40a3061f241027df83a46b0b1cc31b9a9ffe098d19724f58c3c1435d8ac"
+    },
+    {
+      "path": "tests/test_phone_transport.py",
+      "bytes": 13764,
+      "sha256": "533336d810747087939d566eccca3fed857d2ff6b83bc92c556214d6aa057d7c"
+    },
+    {
+      "path": "tests/test_playback_flow.py",
+      "bytes": 869,
+      "sha256": "494dd2df44a632f7824af0192aea34824355d70c7ea7f4b6cbcea0233eb82ddf"
+    },
+    {
+      "path": "tests/test_playback_native.py",
+      "bytes": 3411,
+      "sha256": "c0f14d93822d410f78065f529a16446fe7cb8f414610d5d4794b6f1a6ee15bc8"
+    },
+    {
+      "path": "tests/test_product_workflow.py",
+      "bytes": 23897,
+      "sha256": "b0295af21dfb9a4e66fb899fe7ea55fe39a165f5641d4e33d40b9529a2cd513d"
+    },
+    {
+      "path": "tests/test_registry_lua_native.py",
+      "bytes": 8025,
+      "sha256": "046be8cb0bb8e62e39ebdf1224d68a26672b10299826a93b8cdccf487e5a9457"
+    },
+    {
+      "path": "tests/test_registry_query_native.py",
+      "bytes": 4025,
+      "sha256": "332207dcdc7efa2bb028011d3310b60532fd9832e9c71e9e962cb5620fb61d60"
+    },
+    {
+      "path": "tests/transfer_flow.lua",
+      "bytes": 2523,
+      "sha256": "8691e1103e0351bd531d881402996ccf0921910b3b24f677505454bd54352493"
+    },
+    {
+      "path": "tests/ui_flow.lua",
+      "bytes": 13409,
+      "sha256": "16d25d0f60192c970bf751a953fd4c61cf843cdddde4879c9ef0702bb77fd6d8"
+    },
+    {
+      "path": "tools/export_wav.py",
+      "bytes": 6168,
+      "sha256": "f00504d0ae08496855514f02f9d40ab268b817ef527539fd1a0c58392dc7a645"
+    },
+    {
+      "path": "tools/package_source.py",
+      "bytes": 12529,
+      "sha256": "5eb9e2a495cb709c6f9389b13b5292a554eb7b2e35200b4bed00f3e430678049"
+    },
+    {
+      "path": "tools/phone_link_profile.py",
+      "bytes": 3815,
+      "sha256": "a6ae8e727d7676320166c4e9ca62494643b86abf2c99b9bf8398bf4f890699ad"
+    },
+    {
+      "path": "tools/registry_profile.py",
+      "bytes": 3951,
+      "sha256": "9d8809766115bfcad61acdded1db5c17179391403a5e23a4ae5ced3a0c44c6d0"
+    },
+    {
+      "path": "tools/render_ui_review.py",
+      "bytes": 9649,
+      "sha256": "5e1ad520e977e31b86ebbbc44fb96eb5956015a335cabbc86d11b50b69adcf04"
+    }
+  ]
+}

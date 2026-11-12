@@ -1,0 +1,121 @@
+{
+  "reference_ap_sha256": "a19b601477569765103eaf468b937bd8026b4d68ffa5c896bde222a79e475858",
+  "firmware": "P65 3.100.043",
+  "windows": [
+    {
+      "id": "module_insmod_locked_init",
+      "address": 206326188,
+      "offset": 4213164,
+      "count": 312,
+      "fnv": 672802162,
+      "sha256": "4d6d01dac969706e6c806d711fcad0ec2d6adacc0400a91f27cb99ad4a11d6ac"
+    },
+    {
+      "id": "module_registry_lock_wrappers",
+      "address": 206544752,
+      "offset": 4431728,
+      "count": 32,
+      "fnv": 445347659,
+      "sha256": "64898cfe6ce7d37d77b74f1645d32b2130b9801a4310fe4d30c144cb8d0e0c94"
+    },
+    {
+      "id": "module_registry_foreach",
+      "address": 206544980,
+      "offset": 4431956,
+      "count": 76,
+      "fnv": 3241745182,
+      "sha256": "dbef2d9f1c1fa2ebb375eea1c0f4bb06250808dfef2cde5a885440dba3c7f08f"
+    },
+    {
+      "id": "recursive_mutex_lock",
+      "address": 206539544,
+      "offset": 4426520,
+      "count": 108,
+      "fnv": 3943907172,
+      "sha256": "20406e7f67bb68328a998936b3bdc30bbbb625a4371b62fc446795ca38b110f6"
+    },
+    {
+      "id": "recursive_mutex_unlock",
+      "address": 206539652,
+      "offset": 4426628,
+      "count": 108,
+      "fnv": 2274258674,
+      "sha256": "bc2e038de77e3bc18c7e8b840c56fff0b0486a2f009295f5b1c4090ec55c8b61"
+    },
+    {
+      "id": "module_current_pid",
+      "address": 206345900,
+      "offset": 4232876,
+      "count": 36,
+      "fnv": 3650569029,
+      "sha256": "600db9799262a4ee59dbaf31e3cb3b4f14964904915538e04893be4df6220fae"
+    },
+    {
+      "id": "module_record_formatter_layout",
+      "address": 206326816,
+      "offset": 4213792,
+      "count": 72,
+      "fnv": 249791806,
+      "sha256": "33250d820416f8843f04f5405fffd016e669c1772685643b4210707ee3d7caf7"
+    },
+    {
+      "id": "registry_open_veneer",
+      "address": 210497280,
+      "offset": 8384256,
+      "count": 8,
+      "fnv": 1573110118,
+      "sha256": "cbbb5b604dff4c4d5ee201d3296a4283d0a32bb1b90fae5566a5a1ad064a16fa"
+    },
+    {
+      "id": "registry_read_veneer",
+      "address": 210496240,
+      "offset": 8383216,
+      "count": 8,
+      "fnv": 4108081779,
+      "sha256": "d2381ce7845194ea07559fcf432b65bbbc70bad63cd73e5c7b02c532b6f734ce"
+    },
+    {
+      "id": "registry_write_veneer",
+      "address": 210493504,
+      "offset": 8380480,
+      "count": 8,
+      "fnv": 1892749604,
+      "sha256": "797c775ffca1dcf048a90d96e314f9235cc3ef34a3597401a3f047e8aeca2155"
+    },
+    {
+      "id": "registry_close_veneer",
+      "address": 210492328,
+      "offset": 8379304,
+      "count": 8,
+      "fnv": 1484121897,
+      "sha256": "8c52df7e8bc49b63a9c5a4cfaaa436c4fbcfab3e6050357d183a5f405e9c9172"
+    }
+  ],
+  "static_assertions": [
+    "insmod_holds_outer_lock",
+    "initializer_receives_unload_pair68",
+    "registry_recursive_lock",
+    "registry_list_head",
+    "registry_callback_and_early_stop",
+    "registry_unlocks_after_callback",
+    "mutex_owner12",
+    "mutex_recursive_depth16",
+    "mutex_unlock_decrements_depth",
+    "record_name4",
+    "record_entry64"
+  ],
+  "device_accessed": false,
+  "physical_verified": false,
+  "retained_callbacks": false,
+  "spawns_task": false,
+  "executes_module_entry": false,
+  "exact_names": [
+    "w6rc",
+    "w6rplay",
+    "w6rplayer",
+    "w6rxlink",
+    "w6rdirect"
+  ],
+  "max_modules": 128,
+  "provenance": "Same pinned loader/registry/recursive-lock ABI previously verified by VoiceSpace GUI attacher; only names are inspected"
+}
