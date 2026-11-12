@@ -108,6 +108,11 @@
       "sha256": "ef96ee681143dfb367c5762b1fafb8c2a3ae18d68c72c2dc948250a7d4ae255c"
     },
     {
+      "path": "docs/INSTALL.md",
+      "bytes": 6147,
+      "sha256": "6a70a6af3c107a1a57dd0bb30973461291c79ef69a31ee7e2b212f93e2fee52d"
+    },
+    {
       "path": "docs/IP_REVIEW.md",
       "bytes": 13798,
       "sha256": "f7768451e6dbbe8d8178f104f4c1c4673e301e85874f47e30fae214322560661"
@@ -339,8 +344,8 @@
     },
     {
       "path": "NOTICE.md",
-      "bytes": 2218,
-      "sha256": "93f06bdcc8b2b3ca828338554034307c9be1611719ec207d85645c793c1ef555"
+      "bytes": 2787,
+      "sha256": "b7318cab5e489197939737cafffed15628d574117bf54953a7028abe5cf299e9"
     },
     {
       "path": "phone-app/.gitignore",
@@ -549,8 +554,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4755,
-      "sha256": "dce448fa158d06ff5d75cb1d8c7ab098b668ecc17b489a6721b1b68c0d6b8068"
+      "bytes": 5928,
+      "sha256": "00736c7192a7c5402775bc1c4c6fc2e9fb533484f3db7c50c78261ad72788580"
     },
     {
       "path": "requirements-build.txt",

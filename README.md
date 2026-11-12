@@ -26,16 +26,19 @@
 
 ## 安装与使用
 
+**[下载完整安装合集](https://github.com/qianliji/watch6-recorder/releases/download/v0.5.3/Watch6-Recorder-0.5.3-Install.zip)** · **[查看安装步骤](docs/INSTALL.md)** · [发布页全部文件](https://github.com/qianliji/watch6-recorder/releases/tag/v0.5.3)
+
 | 位置 | 文件 | 用途 |
 | --- | --- | --- |
-| 手表表盘 | `Watch6-Recorder-0.5.3.bin` | 录音、列表、回听、发起导出 |
-| 手表快应用 | `Watch6-Recorder-Identity-0.5.0.rpk` | 提供运动健康通信身份，首次安装后日常无需打开 |
-| Android 手机 | `Watch6-Recorder-Phone-0.5.1.apk` | 接收、校验保存、手机回听和分享 |
+| 手表表盘 | [Watch6-Recorder-0.5.3.bin](https://github.com/qianliji/watch6-recorder/releases/download/v0.5.3/Watch6-Recorder-0.5.3.bin) | 用「表盘自定义工具」安装；录音、列表、回听、发起导出 |
+| 手表快应用 | [Watch6-Recorder-Identity-0.5.0.rpk](https://github.com/qianliji/watch6-recorder/releases/download/v0.5.3/Watch6-Recorder-Identity-0.5.0.rpk) | 用「表盘自定义工具」安装；提供通信身份，日常无需打开 |
+| Android 手机 | [Watch6-Recorder-Phone-0.5.1.apk](https://github.com/qianliji/watch6-recorder/releases/download/v0.5.3/Watch6-Recorder-Phone-0.5.1.apk) | 在手机直接安装；接收、校验保存、手机回听和分享 |
 
-1. 用小米运动健康正常配对手表，按自己设备支持的方式安装 BIN 与 RPK；本项目不包含第三方侧载工具。
-2. 手机安装 APK，打开「Watch6 录音」，进入「连接」并开启接收，完成系统及运动健康通信授权。
-3. 日常只操作录音表盘：开始 → 暂停/继续 → 结束保存 → 回听或发送到手机。
-4. 手机显示完整保存后即可播放、另存下载或手动分享。100% 接收进度仍需完成最终校验与保存。
+1. 确认使用支持的 Watch 6 固件，手机为 Android 12 或以上，并已在小米运动健康中配对手表。
+2. 解压安装合集。在手机直接安装 APK；用「表盘自定义工具」分别把 RPK 和 BIN 安装到手表，并启用录音表盘。安装工具由使用者自行准备。
+3. 安装完成后，回到小米运动健康确认手表已连接。打开手机「Watch6 录音」→「连接」→「开启接收」，按提示完成附近设备、通知和运动健康通信授权。
+4. 日常在录音表盘操作：开始 → 暂停/继续 → 结束保存 → 完整回听或发送到手机。连接组件只需安装保留，日常不用打开；不需要 USB、服务密钥或电脑配对码。
+5. 手机显示完整保存后即可播放、另存下载或手动分享。100% 接收进度仍需完成最终校验与保存。
 
 手机息屏接收需要系统允许运动健康和本应用在后台运行。系统强制停止、撤销权限后需重新启用。安装细节和修复记录见 [当前版本说明](docs/RELEASE_0.5.3.md)。
 
@@ -53,6 +56,8 @@
 ## 开发与构建
 
 源码包包含项目实现与测试，不包含厂商固件、SDK、外部表盘打包器或签名私钥。构建者需自行提供合法取得的外部输入，配置示例在根目录及 `phone-app/`；个人配置使用被忽略的 `.local-build.json`。
+
+发布页另提供预编译的 BIN、APK 和 RPK；APK 内含已集成的穿戴通信 SDK 运行代码，第三方部分的许可范围见 [NOTICE](NOTICE.md)。
 
 ```sh
 python -m pip install -r requirements-build.txt
